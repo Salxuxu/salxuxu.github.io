@@ -1,0 +1,76 @@
+name: Fix mobile project overflow
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/fix-mobile-project-overflow.yml'
+
+jobs:
+  update-mobile-css:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Patch responsive CSS
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          path = Path('index.html')
+          html = path.read_text()
+          old = '''  .project-card-info{padding:24px;}
+            .project-card-img{padding:12px;aspect-ratio:16/10;}
+            .about-section{padding:24px;}'''
+          new = '''  .project-card-info{padding:24px;}
+            .project-card-img{padding:12px;aspect-ratio:16/10;}
+            .project-card-topline{align-items:flex-start;}
+            .project-card-type{max-width:180px;}
+            .about-section{padding:24px;}'''
+          if old not in html:
+              raise SystemExit('Expected project mobile CSS block not found')
+          html = html.replace(old, new, 1)
+          old = '''  .contact-section{flex-direction:column;padding:48px 24px;gap:40px;}
+            .cs-back-bar,.cs-body{padding-left:24px;padding-right:24px;}'''
+          new = '''  .contact-section{flex-direction:column;padding:48px 24px;gap:40px;}
+            .contact-dog{width:100%;display:flex;justify-content:center;overflow:hidden;}
+            .contact-dog img{width:min(260px,80vw);height:auto;}
+            .cs-back-bar,.cs-body{padding-left:24px;padding-right:24px;}'''
+          if old not in html:
+              raise SystemExit('Expected contact mobile CSS block not found')
+          html = html.replace(old, new, 1)
+          old = '''  .cs-nav-bottom{padding:32px 24px;}
+          }
+          a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-btn, .cs-nav-btn, .btn-submit, .contact-link, .nav-links a {'''
+          new = '''  .cs-nav-bottom{padding:32px 24px;}
+          }
+          @media(max-width:520px){
+            .projects{padding:56px 16px;}
+            .projects-title{font-size:40px;}
+            .projects-intro{font-size:15px;}
+            .projects-grid{gap:18px;}
+            .project-card-info{padding:22px;}
+            .project-card-title{font-size:25px;}
+            .project-card-type{max-width:150px;}
+            .project-meta span{font-size:11px;}
+          }
+          a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-btn, .cs-nav-btn, .btn-submit, .contact-link, .nav-links a {'''
+          if old not in html:
+              raise SystemExit('Expected end of mobile media block not found')
+          html = html.replace(old, new, 1)
+          path.write_text(html)
+          PY
+      - name: Commit mobile overflow fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git rm .github/workflows/fix-mobile-project-overflow.yml
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Polish project cards on mobile"
+            git push
+          fi
