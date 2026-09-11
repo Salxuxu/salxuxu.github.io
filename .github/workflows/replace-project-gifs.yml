@@ -1,0 +1,77 @@
+name: Replace project GIFs with static images
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/replace-project-gifs.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  replace-gifs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate static project images
+        run: |
+          python -m pip install --quiet pillow
+          python <<'PY'
+          from pathlib import Path
+          from urllib.request import urlretrieve
+          from PIL import Image
+
+          root = Path.cwd()
+          assets = root / 'assets'
+          assets.mkdir(exist_ok=True)
+
+          images = [
+              {
+                  'url': 'https://framerusercontent.com/images/ARs5kRLhlMRZb3qOy9Uwcs2Wrhw.gif',
+                  'path': assets / 'fp-resource-center.png',
+                  'frame': 156,
+                  'replacement': 'assets/fp-resource-center.png',
+              },
+              {
+                  'url': 'https://framerusercontent.com/images/aTbXQLipvNc9bmHU26MGjxbm6I.gif',
+                  'path': assets / 'focal-point-library.png',
+                  'frame': 70,
+                  'replacement': 'assets/focal-point-library.png',
+              },
+          ]
+
+          for item in images:
+              gif_path = assets / (item['path'].stem + '.gif')
+              urlretrieve(item['url'], gif_path)
+              with Image.open(gif_path) as image:
+                  image.seek(item['frame'])
+                  image.convert('RGB').save(item['path'], optimize=True)
+              gif_path.unlink()
+
+          index_path = root / 'index.html'
+          html = index_path.read_text(encoding='utf-8')
+          for item in images:
+              html = html.replace(item['url'], item['replacement'])
+          index_path.write_text(html, encoding='utf-8')
+
+          workflow_path = root / '.github' / 'workflows' / 'replace-project-gifs.yml'
+          workflow_path.unlink(missing_ok=True)
+          PY
+
+      - name: Commit static image replacement
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html assets/fp-resource-center.png assets/focal-point-library.png .github/workflows/replace-project-gifs.yml
+          git commit -m "Replace project GIFs with static images"
+          git push
