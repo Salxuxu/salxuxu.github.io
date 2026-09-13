@@ -1,0 +1,112 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAFBFA"/>
+      <stop offset="1" stop-color="#F8FBFF"/>
+    </linearGradient>
+    <filter id="shadow" x="112" y="84" width="1376" height="832" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="18"/>
+      <feGaussianBlur stdDeviation="32"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.06 0 0 0 0 0.30 0 0 0 0 0.42 0 0 0 0.15 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1000" rx="42" fill="url(#bg)"/>
+  <g filter="url(#shadow)">
+    <rect x="176" y="128" width="1248" height="744" rx="32" fill="#FFFFFF" stroke="#DCE7E8" stroke-width="2"/>
+    <rect x="176" y="128" width="210" height="744" rx="32" fill="#F8FBFF"/>
+    <rect x="354" y="128" width="32" height="744" fill="#F8FBFF"/>
+
+    <text x="236" y="232" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="900">F.</text>
+    <text x="224" y="278" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="900">Coach Central</text>
+    <rect x="218" y="372" width="132" height="52" rx="14" fill="#E8F3FF"/>
+    <circle cx="246" cy="398" r="10" fill="#2F73FF"/>
+    <text x="276" y="406" fill="#0B2E63" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="900">Tools</text>
+    <circle cx="246" cy="482" r="10" fill="#B8C6D9"/>
+    <rect x="276" y="474" width="80" height="16" rx="8" fill="#B8C6D9"/>
+    <circle cx="246" cy="548" r="10" fill="#B8C6D9"/>
+    <rect x="276" y="540" width="96" height="16" rx="8" fill="#B8C6D9"/>
+    <circle cx="246" cy="614" r="10" fill="#B8C6D9"/>
+    <rect x="276" y="606" width="78" height="16" rx="8" fill="#B8C6D9"/>
+    <rect x="218" y="744" width="130" height="2" fill="#DDE7EA"/>
+    <rect x="218" y="788" width="112" height="18" rx="9" fill="#0B2E63"/>
+    <rect x="218" y="824" width="142" height="34" rx="17" fill="#FFFFFF" stroke="#2F73FF" stroke-width="2"/>
+    <text x="244" y="847" fill="#0B2E63" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="900">Get support</text>
+
+    <rect x="442" y="172" width="520" height="58" rx="29" fill="#FFFFFF" stroke="#DDE7EA" stroke-width="2"/>
+    <circle cx="482" cy="201" r="12" stroke="#52698F" stroke-width="5"/>
+    <line x1="492" y1="211" x2="504" y2="223" stroke="#52698F" stroke-width="5" stroke-linecap="round"/>
+    <text x="530" y="210" fill="#52698F" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Search tools, resources, or topics...</text>
+    <circle cx="1218" cy="200" r="18" fill="#EEF5FF"/>
+    <circle cx="1218" cy="200" r="6" fill="#FF2D2D"/>
+    <rect x="1268" y="171" width="124" height="58" rx="29" fill="#FFFFFF" stroke="#DDE7EA" stroke-width="2"/>
+    <circle cx="1301" cy="200" r="24" fill="#085FE8"/>
+    <text x="1289" y="208" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="900">SX</text>
+
+    <text x="442" y="334" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="900">Tools</text>
+    <circle cx="614" cy="315" r="11" fill="#2F9DFF"/>
+    <text x="442" y="384" fill="#52698F" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="700">A cleaner workspace for coaching tools.</text>
+    <rect x="442" y="420" width="270" height="18" rx="9" fill="#D9EAFE"/>
+    <rect x="442" y="454" width="210" height="18" rx="9" fill="#D9EAFE"/>
+
+    <rect x="1032" y="274" width="326" height="206" rx="30" fill="#EEF8FF"/>
+    <text x="1072" y="340" fill="#0B2E63" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900">Organized</text>
+    <text x="1072" y="382" fill="#0B2E63" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900">coaching</text>
+    <text x="1072" y="424" fill="#0B2E63" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900">resources.</text>
+    <circle cx="1302" cy="400" r="8" fill="#2F9DFF"/>
+    <rect x="1266" y="302" width="92" height="18" rx="9" transform="rotate(-45 1266 302)" fill="#063987"/>
+    <rect x="1294" y="360" width="112" height="18" rx="9" transform="rotate(-45 1294 360)" fill="#21B8EF"/>
+    <rect x="1346" y="412" width="82" height="18" rx="9" transform="rotate(-45 1346 412)" fill="#82D995"/>
+
+    <g>
+      <rect x="442" y="520" width="286" height="142" rx="24" fill="#FFFFFF" stroke="#E3EBEF" stroke-width="2"/>
+      <circle cx="504" cy="580" r="32" fill="#EEF5FF"/>
+      <text x="487" y="593" fill="#2F73FF" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="900">G</text>
+      <text x="556" y="574" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Google</text>
+      <text x="556" y="604" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Workspace</text>
+      <rect x="556" y="632" width="126" height="14" rx="7" fill="#D9EAFE"/>
+    </g>
+    <g>
+      <rect x="768" y="520" width="286" height="142" rx="24" fill="#FFFFFF" stroke="#E3EBEF" stroke-width="2"/>
+      <circle cx="830" cy="580" r="32" fill="#EEF5FF"/>
+      <text x="812" y="594" fill="#0F64FF" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">K</text>
+      <text x="882" y="588" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Kennected</text>
+      <rect x="882" y="624" width="132" height="14" rx="7" fill="#D9EAFE"/>
+    </g>
+    <g>
+      <rect x="1094" y="520" width="286" height="142" rx="24" fill="#FFFFFF" stroke="#E3EBEF" stroke-width="2"/>
+      <circle cx="1156" cy="580" r="32" fill="#DDF7E3"/>
+      <rect x="1135" y="584" width="12" height="24" rx="6" fill="#57C978"/>
+      <rect x="1153" y="562" width="12" height="46" rx="6" fill="#57C978"/>
+      <rect x="1171" y="542" width="12" height="66" rx="6" fill="#57C978"/>
+      <text x="1208" y="588" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">KRA Form</text>
+      <rect x="1208" y="624" width="118" height="14" rx="7" fill="#D9EAFE"/>
+    </g>
+    <g>
+      <rect x="442" y="704" width="286" height="142" rx="24" fill="#FFFFFF" stroke="#E3EBEF" stroke-width="2"/>
+      <circle cx="504" cy="764" r="32" fill="#EFF8FF"/>
+      <text x="478" y="777" fill="#2F9DFF" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="900">on</text>
+      <text x="556" y="772" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Ontraport</text>
+      <rect x="556" y="808" width="132" height="14" rx="7" fill="#D9EAFE"/>
+    </g>
+    <g>
+      <rect x="768" y="704" width="286" height="142" rx="24" fill="#FFFFFF" stroke="#E3EBEF" stroke-width="2"/>
+      <circle cx="830" cy="764" r="32" fill="#DDF7E3"/>
+      <text x="818" y="778" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="46" font-weight="900">P</text>
+      <text x="882" y="772" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Success Guide</text>
+      <rect x="882" y="808" width="114" height="14" rx="7" fill="#CBEFCE"/>
+    </g>
+    <g>
+      <rect x="1094" y="704" width="286" height="142" rx="24" fill="#FFFFFF" stroke="#E3EBEF" stroke-width="2"/>
+      <circle cx="1156" cy="764" r="32" fill="#2F73FF"/>
+      <rect x="1135" y="749" width="32" height="26" rx="7" fill="#FFFFFF"/>
+      <path d="M1169 756L1184 747V778L1169 769V756Z" fill="#FFFFFF"/>
+      <text x="1208" y="772" fill="#06295B" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="900">Zoom</text>
+      <rect x="1208" y="808" width="118" height="14" rx="7" fill="#D9EAFE"/>
+    </g>
+  </g>
+</svg>
