@@ -411,6 +411,20 @@ a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-
   }
   nav{padding-left:max(40px,calc((100vw - 1200px)/2));padding-right:max(40px,calc((100vw - 1200px)/2));}
 }
+
+/* Clear, consistent skill cards with decorative line icons. */
+.skills{padding:80px max(24px,calc((100vw - 1120px)/2)) 88px;}
+.skills-header{max-width:1120px;margin:0 auto 32px;}
+.skills-eyebrow{font-size:12px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:10px;}
+.skills-title{text-align:left;font-size:clamp(36px,4.5vw,54px);line-height:1.1;margin-bottom:0;}
+.skills-grid{max-width:1120px;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.skill-item{display:flex;align-items:center;gap:16px;min-height:126px;padding:24px 20px;text-align:left;font-family:var(--font);font-size:inherit;letter-spacing:normal;border:1.5px solid rgba(15,76,107,.2);border-radius:14px;background:rgba(255,255,255,.66);box-shadow:0 4px 0 rgba(15,76,107,.1);}
+.skill-icon{display:flex;align-items:center;justify-content:center;flex:0 0 48px;height:48px;border:1.5px solid rgba(15,76,107,.2);border-radius:12px;background:var(--sage);color:var(--teal-dark);}
+.skill-icon svg{width:27px;height:27px;}
+.skill-item h3{font-size:19px;font-weight:900;line-height:1.25;margin:0 0 6px;}
+.skill-item p{font-size:13px;font-weight:600;line-height:1.5;color:#36545a;margin:0;}
+@media(max-width:1000px){.skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:560px){.skills{padding:64px 24px;}.skills-grid{grid-template-columns:1fr;gap:12px;}.skill-item{min-height:100px;padding:20px;}.skills-eyebrow{font-size:10px;}}
 </style>
 </head>
 <body>
@@ -439,15 +453,15 @@ a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-
     <img class="hero-avatar" src="https://framerusercontent.com/images/AN0hD6ON9HLbFbR3dsj2FIwhGlY.png" alt="Salena pixel art avatar">
     <img class="sprite sprite-chickens" src="https://framerusercontent.com/images/krAD50NBo4MOdbbEs5a7DkBiY.gif" alt="pixel chickens">
   </section>
-  <section class="skills">
-    <h2 class="skills-title">What I Do</h2>
+  <section class="skills" aria-labelledby="skills-heading">
+    <div class="skills-header"><p class="skills-eyebrow">Creative thinking. Practical design.</p><h2 class="skills-title" id="skills-heading">What I Do</h2></div>
     <div class="skills-grid">
-      <div class="skill-item">Graphic Design</div>
-      <div class="skill-item">Product Design</div>
-      <div class="skill-item">UX&amp;UI Design</div>
-      <div class="skill-item">Usability Research</div>
-      <div class="skill-item">Marketing</div>
-      <div class="skill-item">Web Design</div>
+      <div class="skill-item"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14 3 7 7-10 10-8 1 1-8Z"/><path d="m12 5 7 7M4 13l7 7M3 21l5-5"/></svg></span><div><h3>Graphic Design</h3><p>Visual identity & storytelling</p></div></div>
+      <div class="skill-item"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 9v12"/><path d="m13 14 2 2 3-3"/></svg></span><div><h3>Product Design</h3><p>From ideas to useful products</p></div></div>
+      <div class="skill-item"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="15" rx="3"/><path d="M7 7h10M7 11h5M9 22h6M12 18v4"/><path d="m16 12 5 3-3 1-1 3Z"/></svg></span><div><h3>UX &amp; UI Design</h3><p>Intuitive flows & thoughtful interfaces</p></div></div>
+      <div class="skill-item"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6M10 7v6"/></svg></span><div><h3>Usability Research</h3><p>Listening, testing & learning</p></div></div>
+      <div class="skill-item"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 10 12-5v14L3 14ZM15 8l5-3v14l-5-3M5 15l2 6h4l-2-5"/></svg></span><div><h3>Marketing</h3><p>Connecting brands with people</p></div></div>
+      <div class="skill-item"><span class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="3" width="20" height="18" rx="3"/><path d="M2 8h20M6 5.5h.01M9 5.5h.01m0 7-3 3 3 3m6-6 3 3-3 3"/></svg></span><div><h3>Web Design</h3><p>Responsive, engaging websites</p></div></div>
     </div>
   </section>
   <section class="projects" id="projects-anchor">
