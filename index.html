@@ -150,6 +150,13 @@ body.scrolled-past-hero .hero::before{opacity:0;}
   padding:5%;
   background:linear-gradient(135deg,#EAFBFA 0%,#F8FBFF 100%);
 }
+/* The supplied Library artwork includes its own border and shadow. */
+.project-card-img img[src="assets/focal-point-library-dashboard.png"]{
+  padding:0;
+  object-fit:contain;
+  box-shadow:none;
+  background:#f3f3f3;
+}
 .project-card:hover .project-card-img img{transform:scale(1.015);}
 .project-card-info{
   display:flex;
@@ -438,7 +445,7 @@ a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-
         </div>
       </article>
       <article class="project-card teal-card reveal" onclick="go('cs2')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();go('cs2');}">
-        <div class="project-card-img"><img src="assets/focal-point-library-preview.svg" alt="Focal Point Library dashboard preview" loading="lazy" decoding="async"></div>
+        <div class="project-card-img"><img src="assets/focal-point-library-dashboard.png" alt="Focal Point Library dashboard preview" loading="lazy" decoding="async"></div>
         <div class="project-card-info">
           <div class="project-card-topline"><span>02</span><span class="project-card-type">Library experience</span></div>
           <h3 class="project-card-title">Focal Point Library Redesign</h3>
@@ -491,7 +498,7 @@ a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-
   </div>
   <div>
     <div style="display:grid;grid-template-columns:1fr 1fr;border-bottom:2px solid rgba(0,0,0,0.06);cursor:none;transition:background .2s;" onclick="go('cs2')" onmouseover="this.style.background='var(--project-card)'" onmouseout="this.style.background=''">
-      <div style="overflow:hidden;aspect-ratio:16/10;background:#fff;"><img src="assets/focal-point-library-preview.svg" style="width:100%;height:100%;object-fit:contain;"></div>
+      <div style="overflow:hidden;aspect-ratio:16/10;background:#fff;"><img src="assets/focal-point-library-dashboard.png" style="width:100%;height:100%;object-fit:contain;"></div>
       <div style="padding:60px 56px;display:flex;flex-direction:column;justify-content:space-between;">
         <div style="font-size:13px;font-weight:600;color:rgba(26,26,26,0.4);">01</div>
         <div>
@@ -535,7 +542,7 @@ a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-
         </div>
       </div>
       <div>
-        <img src="assets/focal-point-library-preview.svg" alt="Focal Point Redesign" style="width:100%;border-radius:12px;box-shadow:8px 8px 32px rgba(0,0,0,0.15);">
+        <img src="assets/focal-point-library-dashboard.png" alt="Focal Point Redesign" style="width:100%;border-radius:12px;box-shadow:8px 8px 32px rgba(0,0,0,0.15);">
       </div>
     </div>
   </div>
@@ -803,7 +810,7 @@ a, button, .project-card, .btn-primary, .btn-secondary, .project-view, .cs-back-
         </div>
       </div>
       <div>
-        <img src="assets/focal-point-library-preview.svg" alt="Focal Point Redesign" style="width:100%;border-radius:12px;box-shadow:8px 8px 32px rgba(0,0,0,0.15);">
+        <img src="assets/focal-point-library-dashboard.png" alt="Focal Point Redesign" style="width:100%;border-radius:12px;box-shadow:8px 8px 32px rgba(0,0,0,0.15);">
       </div>
     </div>
   </div>
