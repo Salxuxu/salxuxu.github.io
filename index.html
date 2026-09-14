@@ -145,6 +145,11 @@ body.scrolled-past-hero .hero::before{opacity:0;}
   background:#fff;
   transition:transform .35s ease;
 }
+/* Match the Library preview's inset presentation without cropping the Tools image. */
+.project-card-img img[src="assets/fp-resource-center-tools.png"]{
+  padding:5%;
+  background:linear-gradient(135deg,#EAFBFA 0%,#F8FBFF 100%);
+}
 .project-card:hover .project-card-img img{transform:scale(1.015);}
 .project-card-info{
   display:flex;
