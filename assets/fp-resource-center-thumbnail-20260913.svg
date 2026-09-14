@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1589 989" role="img" aria-labelledby="title desc">
+  <title id="title">FP Resource Center low-fidelity tools dashboard thumbnail</title>
+  <desc id="desc">A clean low-fidelity mockup of the FP Coach Central tools page with search, profile controls, six tool cards, and a coming soon panel.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eafcff"/>
+      <stop offset="0.58" stop-color="#f7fdff"/>
+      <stop offset="1" stop-color="#e5fbff"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fbfeff"/>
+      <stop offset="1" stop-color="#f1fbff"/>
+    </linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#082c68"/>
+      <stop offset="1" stop-color="#001f4f"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#8fc7d3" flood-opacity="0.28"/>
+    </filter>
+    <style>
+      .font{font-family:Nunito, Arial, sans-serif}.navy{fill:#07175f}.muted{fill:#557099}.line{fill:#c7e5fa}.stroke{stroke:#dcebf1;stroke-width:3}.card{fill:#fff;stroke:#e0ecf1;stroke-width:2}.btnText{fill:#fff;font-size:18px;font-weight:800}.label{fill:#07175f;font-size:22px;font-weight:900}.small{fill:#557099;font-size:15px;font-weight:800}.ghost{fill:#d8edff}.green{fill:#c8f6d2}.blue{fill:#1f74ff}
+    </style>
+  </defs>
+  <rect width="1589" height="989" fill="url(#bg)"/>
+  <rect x="70" y="36" width="1449" height="918" rx="28" fill="url(#panel)" filter="url(#softShadow)"/>
+  <rect x="102" y="66" width="1000" height="84" rx="22" fill="#fff" class="stroke"/>
+  <circle cx="142" cy="108" r="13" fill="none" stroke="#46618c" stroke-width="6"/>
+  <path d="M153 119 L172 138" stroke="#46618c" stroke-width="7" stroke-linecap="round"/>
+  <text x="200" y="116" class="font muted" font-size="18" font-weight="800">Search tools, resources, or topics...</text>
+  <g transform="translate(1190 64)">
+    <path d="M22 42c0-16 10-25 22-25s22 9 22 25v14l9 13H13l9-13z" fill="#07175f"/>
+    <circle cx="58" cy="18" r="7" fill="#ff2430"/>
+  </g>
+  <rect x="1250" y="64" width="250" height="88" rx="26" fill="#fff" class="stroke"/>
+  <circle cx="1300" cy="108" r="31" fill="#0f6df2"/>
+  <text x="1280" y="117" class="font" font-size="22" font-weight="900" fill="#fff">SX</text>
+  <text x="1348" y="116" class="font navy" font-size="21" font-weight="900">Salena Xu</text>
+  <path d="M1462 104l13 12 13-12" fill="none" stroke="#07175f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(102 210)">
+    <text x="0" y="0" class="font navy" font-size="66" font-weight="900">Tools</text>
+    <circle cx="222" cy="-19" r="13" fill="#2fa2ff"/>
+    <rect x="0" y="28" width="520" height="15" rx="7" class="line"/>
+    <rect x="0" y="60" width="380" height="14" rx="7" class="line"/>
+  </g>
+  <line x1="1010" y1="202" x2="1010" y2="292" stroke="#8fa7cc" stroke-width="3"/>
+  <g transform="translate(1070 215)">
+    <text x="0" y="0" class="font navy" font-size="31" font-weight="900">Coaching</text>
+    <text x="0" y="42" class="font navy" font-size="31" font-weight="900">a Better Tomorrow</text>
+    <circle cx="297" cy="31" r="7" fill="#2fa2ff"/>
+    <rect x="346" y="-26" width="120" height="28" rx="14" transform="rotate(-48 346 -26)" fill="#9bcaf8"/>
+    <rect x="397" y="8" width="120" height="28" rx="14" transform="rotate(-48 397 8)" fill="#8be19c"/>
+    <rect x="314" y="38" width="120" height="28" rx="14" transform="rotate(-48 314 38)" fill="#b5daf8"/>
+  </g>
+  <g class="font">
+    <g transform="translate(102 340)">
+      <rect width="452" height="250" rx="18" class="card"/>
+      <circle cx="76" cy="64" r="42" fill="#eaf4ff"/><text x="52" y="79" class="navy" font-size="44" font-weight="900">G</text>
+      <text x="48" y="134" class="label">Google Workspace</text>
+      <rect x="48" y="158" width="354" height="14" rx="7" class="line"/>
+      <rect x="48" y="186" width="285" height="13" rx="6" class="line"/>
+      <rect x="48" y="217" width="235" height="42" rx="8" fill="url(#button)"/><text x="86" y="245" class="btnText">Go to Workspace</text><path d="M246 237h20m-9-9 10 9-10 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(578 340)">
+      <rect width="452" height="250" rx="18" class="card"/>
+      <circle cx="76" cy="64" r="42" fill="#eaf4ff"/><text x="55" y="78" fill="#1f74ff" font-size="46" font-weight="900">K</text>
+      <text x="48" y="134" class="label">Kennected (Buzz)</text>
+      <rect x="48" y="158" width="354" height="14" rx="7" class="line"/>
+      <rect x="48" y="186" width="285" height="13" rx="6" class="line"/>
+      <rect x="48" y="217" width="285" height="42" rx="8" fill="url(#button)"/><text x="76" y="245" class="btnText">Continue Subscription</text><path d="M292 237h20m-9-9 10 9-10 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(1054 340)">
+      <rect width="452" height="250" rx="18" class="card"/>
+      <circle cx="76" cy="64" r="42" fill="#d8f8df"/><rect x="48" y="81" width="16" height="36" rx="7" fill="#55ce80"/><rect x="74" y="64" width="16" height="53" rx="7" fill="#55ce80"/><rect x="100" y="39" width="16" height="78" rx="7" fill="#55ce80"/>
+      <text x="48" y="134" class="label">KRA Form (Every Month)</text>
+      <rect x="48" y="158" width="354" height="14" rx="7" class="line"/>
+      <rect x="48" y="186" width="285" height="13" rx="6" class="line"/>
+      <rect x="48" y="217" width="220" height="42" rx="8" fill="url(#button)"/><text x="88" y="245" class="btnText">Fill out Form</text><path d="M230 237h20m-9-9 10 9-10 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(102 614)">
+      <rect width="452" height="250" rx="18" class="card"/>
+      <circle cx="76" cy="64" r="42" fill="#eaf4ff"/><text x="43" y="78" fill="#1f89ff" font-size="42" font-weight="900">on</text>
+      <text x="48" y="134" class="label">Ontraport for CRM</text>
+      <rect x="48" y="158" width="354" height="14" rx="7" class="line"/>
+      <rect x="48" y="186" width="285" height="13" rx="6" class="line"/>
+      <rect x="48" y="217" width="170" height="42" rx="8" class="ghost"/><text x="106" y="245" fill="#0d69ff" font-size="17" font-weight="900">Details</text>
+      <rect x="238" y="217" width="176" height="42" rx="8" fill="url(#button)"/><text x="270" y="245" class="btnText">Access Tool</text><path d="M378 237h20m-9-9 10 9-10 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(578 614)">
+      <rect width="452" height="250" rx="18" class="card"/>
+      <circle cx="76" cy="64" r="42" fill="#d8f8df"/><text x="58" y="79" class="navy" font-size="52" font-weight="900">P</text>
+      <text x="48" y="134" class="label">The Point Success Guide</text>
+      <rect x="48" y="158" width="354" height="14" rx="7" class="line"/>
+      <rect x="48" y="186" width="285" height="13" rx="6" class="line"/>
+      <rect x="48" y="217" width="176" height="42" rx="8" class="green"/><text x="102" y="245" fill="#0d69ff" font-size="17" font-weight="900">Tutorial</text>
+      <rect x="240" y="217" width="174" height="42" rx="8" fill="url(#button)"/><text x="272" y="245" class="btnText">Access Tool</text><path d="M378 237h20m-9-9 10 9-10 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(1054 614)">
+      <rect width="452" height="250" rx="18" class="card"/>
+      <circle cx="76" cy="64" r="42" fill="#327dff"/><rect x="50" y="51" width="42" height="27" rx="6" fill="#fff"/><path d="M94 58l20-13v40L94 72z" fill="#fff"/>
+      <text x="48" y="134" class="label">Zoom Workplace</text>
+      <rect x="48" y="158" width="354" height="14" rx="7" class="line"/>
+      <rect x="48" y="186" width="285" height="13" rx="6" class="line"/>
+      <rect x="48" y="217" width="182" height="42" rx="8" fill="url(#button)"/><text x="80" y="245" class="btnText">Access Tool</text><path d="M194 237h20m-9-9 10 9-10 9" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g transform="translate(102 884)" class="font">
+    <rect width="1404" height="72" rx="18" fill="#fff" opacity="0.96" class="stroke"/>
+    <circle cx="64" cy="36" r="38" fill="#eaf4ff"/><text x="41" y="51" class="navy" font-size="44" font-weight="900">F</text><circle cx="80" cy="53" r="6" fill="#2fa2ff"/>
+    <text x="144" y="30" class="label">FP Connect (Coming Soon)</text>
+    <rect x="144" y="42" width="620" height="12" rx="6" class="line"/>
+    <path d="M1168 0h236v72h-318c18-40 48-64 82-72z" fill="#e8f4ff"/>
+    <text x="1224" y="33" fill="#0d69ff" font-size="22" font-weight="900">Coming</text><text x="1224" y="58" fill="#0d69ff" font-size="22" font-weight="900">Soon</text>
+  </g>
+</svg>
