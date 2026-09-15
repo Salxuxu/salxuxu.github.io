@@ -559,6 +559,34 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
 .flag-footer button{background:none;border:0;font-family:inherit;}
 @media(max-width:800px){.flag-wrap{width:calc(100% - 40px);}.flag-hero{padding-top:96px;}.flag-snapshot{grid-template-columns:1fr 1fr;}.flag-two,.flag-three,.flag-comparison{grid-template-columns:1fr;gap:24px;}.flag-section{padding:48px 0;}.flag-deck{font-size:19px;}.flag-results{padding:24px;gap:16px;}nav.flag-jumps{gap:16px;}.flag-footer{flex-wrap:wrap;}}
 .flag-feedback{background:#dcefee;padding:32px;border-radius:12px;margin-top:28px;}.flag-feedback>p{max-width:850px;font-size:18px;line-height:1.8;color:#49594f;}.flag-feedback>.flag-caption{font-size:13px;}
+
+/* Mobile introduction first; pixel characters share a compact ground scene. */
+@media(max-width:900px){
+  .hero{display:block;height:auto;min-height:0;padding:104px 24px 190px;text-align:left;margin-bottom:0;}
+  .hero-content{width:100%;max-width:580px;margin:0 auto;}
+  .hero-greeting{font-size:clamp(30px,6.5vw,44px);line-height:1.15;letter-spacing:-.025em;margin:0 0 20px;}
+  .hero-role{font-size:16px;line-height:1.4;margin:0 0 12px;letter-spacing:.03em;}
+  .hero-subtitle{font-size:18px;line-height:1.65;max-width:100%;margin:0 0 24px;}
+  .hero-btns{justify-content:flex-start;align-items:center;gap:12px;opacity:1;animation:none;}
+  .hero-btns .btn-primary{padding:13px 18px;font-size:14px;}
+  .hero-btns .btn-secondary{padding:12px 6px;font-size:14px;}
+  .hero-avatar{position:absolute;right:max(24px,calc((100vw - 580px)/2));bottom:-22px;height:184px;max-height:none;width:auto;margin:0;opacity:1;animation:none;transform:none;}
+  .sprite-chickens{left:max(24px,calc((100vw - 580px)/2));bottom:-5px;height:65px;transform:none;opacity:1;animation:none;}
+  .hero-ground{height:44px;}
+  .nav-logo{width:36px;height:36px;}
+  .nav-logo img{width:36px;height:72px;}
+  .nav-links{gap:16px;}
+  .nav-links a{display:inline-flex;align-items:center;min-height:44px;font-size:13px;}
+  .editorial-projects .projects-header{margin-bottom:32px;}
+}
+@media(max-width:380px){
+  nav{padding:0 18px;}.nav-links{gap:12px;}
+  .hero{padding:92px 20px 176px;}
+  .hero-greeting{font-size:29px;}
+  .hero-subtitle{font-size:17px;}
+  .hero-avatar{height:170px;}
+  .hero-btns{gap:8px;}
+}
 </style>
 </head>
 <body>
