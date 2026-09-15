@@ -520,6 +520,44 @@ nav{padding:0 max(32px,calc((100vw - 1120px)/2));}
 .work-archive>.case-link{margin-top:32px;}
 @media(max-width:900px){.case-row,.case-row-reverse{grid-template-columns:1fr;}.archive-entry{grid-template-columns:24px 1fr 24px;gap:16px;}.archive-result{grid-column:2;}.archive-entry>span:last-child{grid-column:3;grid-row:1;}}
 @media(max-width:560px){.work-archive{padding:104px 24px 64px;}.archive-entry h2{font-size:21px;}}
+
+.flagship{background:var(--off-white);}
+.flag-wrap{width:min(1200px,calc(100% - 80px));margin-left:auto;margin-right:auto;}
+.flag-hero{padding-top:112px;padding-bottom:40px;}
+.flag-back{border:0;background:none;font-family:inherit;margin-bottom:40px;}
+.flag-hero h1{font-size:clamp(42px,5.5vw,76px);line-height:1.06;letter-spacing:-.03em;font-weight:900;margin:16px 0 24px;}
+.flag-deck{max-width:790px;font-size:22px;line-height:1.65;color:#47564d;}
+.flag-snapshot{display:grid;grid-template-columns:1fr 1fr 1.4fr 1fr;gap:24px;border-top:1px solid #ccd4ca;padding-top:28px;margin-top:40px;}
+.flag-snapshot dt{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#617364;font-weight:800;margin-bottom:8px;}
+.flag-snapshot dd{font-size:16px;font-weight:700;}
+.flag-evidence{display:flex;flex-wrap:wrap;gap:16px 36px;margin-top:30px;font-size:14px;color:#4b5d50;}
+.flag-evidence strong{color:var(--teal-dark);font-size:20px;}
+.flag-visual img{width:100%;height:auto;display:block;border-radius:14px;}
+.flag-visual figcaption,.flag-caption{font-size:13px;line-height:1.6;color:#68736b;margin-top:12px;}
+nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-start;gap:28px;padding:32px 0;background:none;border-bottom:1px solid #ccd4ca;box-shadow:none;flex-wrap:wrap;}
+.flag-jumps a{font-size:14px;font-weight:800;color:var(--teal-dark);text-decoration:none;}
+.flag-section{padding:80px 0;border-bottom:1px solid #d8ded5;scroll-margin-top:80px;}
+.flag-section h2{font-size:clamp(30px,3.5vw,46px);line-height:1.16;font-weight:900;letter-spacing:-.02em;max-width:860px;margin:12px 0 24px;}
+.flag-section h3{font-size:21px;font-weight:900;line-height:1.3;margin:0 0 14px;}
+.flag-two{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
+.flag-prose p,.flag-lead{font-size:18px;line-height:1.8;color:#49594f;margin-bottom:20px;}
+.flag-lead{max-width:850px;}
+.flag-prose h3{margin-top:28px;}
+.flag-three{display:grid;grid-template-columns:repeat(3,1fr);gap:36px;margin-top:36px;}
+.flag-three p{font-size:16px;line-height:1.7;color:#49594f;margin-bottom:18px;}
+.flag-three strong{font-size:12px;color:var(--teal-dark);text-transform:uppercase;letter-spacing:.06em;}
+.flag-comparison{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px;}
+.flag-comparison>div{padding:32px;background:#e9ece3;border-radius:12px;}
+.flag-comparison>div:last-child{background:#dcefee;}
+.flag-comparison span{display:block;font-size:12px;text-transform:uppercase;font-weight:900;letter-spacing:.12em;color:var(--teal-dark);margin-bottom:18px;}
+.flag-comparison ol,.flag-contributions{padding-left:22px;font-size:17px;line-height:1.8;color:#49594f;}
+.flag-comparison li,.flag-contributions li{margin-bottom:14px;}
+.flag-results{display:grid;grid-template-columns:1fr 1fr;gap:32px;background:#dcefee;padding:40px;border-radius:14px;margin:32px 0;}
+.flag-results strong{display:block;font-size:clamp(48px,6vw,80px);line-height:1.1;color:var(--teal-dark);font-weight:900;}
+.flag-results span{font-size:18px;font-weight:700;}
+.flag-footer{display:flex;justify-content:space-between;gap:24px;padding:40px 0 72px;}
+.flag-footer button{background:none;border:0;font-family:inherit;}
+@media(max-width:800px){.flag-wrap{width:calc(100% - 40px);}.flag-hero{padding-top:96px;}.flag-snapshot{grid-template-columns:1fr 1fr;}.flag-two,.flag-three,.flag-comparison{grid-template-columns:1fr;gap:24px;}.flag-section{padding:48px 0;}.flag-deck{font-size:19px;}.flag-results{padding:24px;gap:16px;}nav.flag-jumps{gap:16px;}.flag-footer{flex-wrap:wrap;}}
 </style>
 </head>
 <body>
@@ -751,283 +789,60 @@ nav{padding:0 max(32px,calc((100vw - 1120px)/2));}
     <button class="cs-nav-btn" onclick="go('cs1')">FP Resource Center →</button>
   </div>
 </div>
-<div id="page-cs1" class="page cs-page">
-  <div class="cs-back-bar" style="background:var(--sage);">
-    <button class="cs-back-btn" onclick="go('home')">Back to Home</button>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;">
-      <span class="cs-tag" style="background:var(--teal-dark);">UX Design</span>
-      <span class="cs-tag" style="background:#B5A88A;color:var(--dark);">Research</span>
-      <span class="cs-tag" style="background:#C8693A;">Information Architecture</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:20px;">
-      <div>
-        <h1 class="cs-hero-title">Redesigning the FP Resource Center</h1>
-        <p class="cs-hero-sub">A comprehensive UX redesign that transformed how business coaches access and discover resources, resulting in significant improvements in user satisfaction and engagement metrics.</p>
-        <div style="display:flex;gap:40px;flex-wrap:wrap;margin-top:32px;">
-          <div><div class="cs-meta-label">Role</div><div class="cs-meta-val">Lead UX Designer</div></div>
-          <div><div class="cs-meta-label">Scope</div><div class="cs-meta-val">UX · Research · IA</div></div>
-          <div><div class="cs-meta-label">Impact</div><div class="cs-meta-val">+60% User Satisfaction</div></div>
-        </div>
-      </div>
-      <div>
-        <img src="assets/fp-resource-center-tools.png" alt="FP Resource Center" style="width:100%;border-radius:12px;box-shadow:8px 8px 32px rgba(0,0,0,0.15);">
-      </div>
-    </div>
-  </div>
-
-
-  <div class="cs-body">
-
-    <!-- Problem -->
-    <div class="cs-section reveal">
-      <p class="cs-section-label">The Problem</p>
-      <h2 class="cs-section-h2">Understanding the Problem</h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px;">
-        <div class="cs-card" style="border:1.5px solid rgba(0,0,0,0.1);">
-          <div class="cs-card-title">Low Discoverability</div>
-          <div class="cs-card-body">Coaches struggled to find the tools they needed because all resources were displayed in the same uniform tile format, with no hierarchy to highlight important items.</div>
-        </div>
-        <div class="cs-card" style="border:1.5px solid rgba(0,0,0,0.1);">
-          <div class="cs-card-title">Poor Information Architecture</div>
-          <div class="cs-card-body">Resources were organized by internal departments rather than user needs. This misalignment between organizational structure and user mental models created friction in the discovery process.</div>
-        </div>
-        <div class="cs-card" style="border:1.5px solid rgba(0,0,0,0.1);">
-          <div class="cs-card-title">Lack of Visual Hierarchy</div>
-          <div class="cs-card-body">All tiles looked nearly identical: same size, weight, and placement, producing cognitive overload. Coaches had to rely on reading every label, which slowed down navigation and reduced overall efficiency.</div>
-        </div>
-        <div class="cs-card" style="border:1.5px solid rgba(0,0,0,0.1);">
-          <div class="cs-card-title">Inconsistent Branding & UI Patterns</div>
-          <div class="cs-card-body">The previous version lacked a cohesive design system. Icons, spacing, and typography were inconsistent, creating a disjointed experience and making the page feel dated compared to other FP digital tools.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Research -->
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Research &amp; Insights</p>
-      <h2 class="cs-section-h2">Design Challenges &amp; Strategic Decisions</h2>
-      <div class="cs-body-text"><p>To tackle the complexity of our resource platform, we conducted a multi-pronged research approach that informed every design decision.</p></div>
-
-      <div style="margin-top:40px;">
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;">User Interviews</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;margin-bottom:16px;">Conducted 12 in-depth interviews with coaches in the community across different experience levels and backgrounds. Key findings:</p>
-        <ul style="list-style:disc;padding-left:24px;display:flex;flex-direction:column;gap:8px;font-size:14px;color:rgba(26,26,26,0.65);font-weight:600;">
-          <li>78% struggled to locate resources relevant to their specific workflow</li>
-          <li>Users preferred task-based organization over departmental categories</li>
-          <li>Search functionality was underutilized due to poor discoverability</li>
-        </ul>
-      </div>
-
-      <div style="margin-top:40px;">
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;">Heuristic Evaluation</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;margin-bottom:16px;">Systematic review of the existing interface against Nielsen's usability heuristics revealed critical issues:</p>
-        <ul style="list-style:disc;padding-left:24px;display:flex;flex-direction:column;gap:8px;font-size:14px;color:rgba(26,26,26,0.65);font-weight:600;">
-          <li>Lack of visibility into system status and user location</li>
-          <li>Inconsistent interaction patterns across sections</li>
-          <li>Poor error handling and validation feedback</li>
-        </ul>
-      </div>
-
-      <div style="margin-top:40px;">
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:12px;">Content Audit</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;">Catalogued 300+ resources and mapped them against user needs, identifying redundancy and gaps in coverage.</p>
-      </div>
-    </div>
-
-    <!-- Redesign -->
-    <div class="cs-section reveal">
-      <p class="cs-section-label">The Solution</p>
-      <h2 class="cs-section-h2">The Redesign</h2>
-
-      <img class="cs-img" src="assets/fp-resource-center-thumbnail-20260913.svg" alt="Before and after redesign">
-
-      <div style="margin-top:48px;">
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:10px;">Task-Based Resource Architecture</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;line-height:1.7;margin-bottom:32px;">Reorganized the FP Resource Center from a dense, uniform grid of tools into a workflow-aligned structure. Instead of forcing coaches to scan every tile, the redesign prioritizes how they actually complete tasks, making key tools easier and faster to access.</p>
-
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:10px;">Improved Scannability &amp; Navigation</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;line-height:1.7;margin-bottom:32px;">Transformed the single-level grid into a more intuitive layout with clear labeling, visual hierarchy, and consistent spacing. Coaches can now identify tools at a glance, reducing search fatigue and improving overall usability.</p>
-
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:10px;">Modernized High-Fidelity Interface</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;line-height:1.7;margin-bottom:32px;">Designed a clean, professional, and coach-friendly interface in Figma with updated icons, typography, and interaction patterns. Translated the full design into Wix, ensuring responsive behavior across desktop and mobile.</p>
-
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:10px;">Unified Visual System Across Platforms</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;line-height:1.7;margin-bottom:32px;">Created a consistent design language that aligns with the FP brand and the newly updated FP Library. This provides a cohesive experience for coaches navigating between multiple FP digital tools.</p>
-
-        <h3 style="font-size:20px;font-weight:900;margin-bottom:10px;">Increased Efficiency &amp; Positive Feedback</h3>
-        <p style="font-size:15px;color:rgba(26,26,26,0.65);font-weight:600;line-height:1.7;">The refreshed layout significantly improves page clarity and reduces cognitive load. Coaches reported that the new Resource Center feels easier to use and more visually modern, with clearer pathways to the tools they rely on daily.</p>
-      </div>
-    </div>
-
-    <!-- Impact -->
-    <div class="cs-section reveal" style="background:var(--teal);padding:64px;margin:0 -80px;border-radius:0;">
-      <p class="cs-section-label" style="color:var(--dark);">Measurable Impact</p>
-      <h2 class="cs-section-h2">Results</h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:8px;">
-        <div style="text-align:center;">
-          <div style="font-size:80px;font-weight:900;line-height:1;">+60%</div>
-          <div style="font-size:16px;font-weight:700;color:rgba(26,26,26,0.6);margin-top:8px;">User Satisfaction</div>
-        </div>
-        <div style="text-align:center;">
-          <div style="font-size:80px;font-weight:900;line-height:1;">+20%</div>
-          <div style="font-size:16px;font-weight:700;color:rgba(26,26,26,0.6);margin-top:8px;">User Engagement</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Key Takeaways -->
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Reflection</p>
-      <h2 class="cs-section-h2">Key Takeaways</h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px;">
-        <div class="cs-card" style="background:white;border:1.5px solid rgba(0,0,0,0.08);">
-          <div class="cs-card-title">User-Centered Organization</div>
-          <div class="cs-card-body">Organizing content around user tasks rather than internal structures is critical. Mental models matter more than organizational convenience.</div>
-        </div>
-        <div class="cs-card" style="background:white;border:1.5px solid rgba(0,0,0,0.08);">
-          <div class="cs-card-title">Accessibility as Core</div>
-          <div class="cs-card-body">Building with accessibility from the start is cheaper and more effective than retrofitting. It also benefits all users.</div>
-        </div>
-        <div class="cs-card" style="background:white;border:1.5px solid rgba(0,0,0,0.08);">
-          <div class="cs-card-title">Design Systems Scale</div>
-          <div class="cs-card-body">Investing in a comprehensive design system pays dividends in consistency, team velocity, and long-term maintainability.</div>
-        </div>
-        <div class="cs-card" style="background:white;border:1.5px solid rgba(0,0,0,0.08);">
-          <div class="cs-card-title">Research Validates Assumptions</div>
-          <div class="cs-card-body">User research surfaced insights that contradicted internal assumptions, leading to better design decisions and outcomes.</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="cs-nav-bottom">
-    <button class="cs-nav-btn" onclick="go('home')">← Back to Home</button>
-    <button class="cs-nav-btn" onclick="go('cs2')">Focal Point Redesign →</button>
-  </div>
-</div>
-
-<div id="page-cs2" class="page cs-page">
-  <div class="cs-back-bar" style="background:var(--sage);">
-    <button class="cs-back-btn" onclick="go('home')">Back to Home</button>
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;">
-      <span class="cs-tag" style="background:var(--teal-dark);">UX Design</span>
-      <span class="cs-tag" style="background:#B5A88A;color:var(--dark);">Research</span>
-      <span class="cs-tag" style="background:#C8693A;">Information Architecture</span>
-    </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:20px;">
-      <div>
-        <h1 class="cs-hero-title">Focal Point Library Homepage Redesign</h1>
-        <p class="cs-hero-sub">Transforming a static internal homepage into a dynamic dashboard for coaches — making critical resources instantly accessible.</p>
-        <div style="display:flex;gap:40px;flex-wrap:wrap;margin-top:32px;">
-          <div><div class="cs-meta-label">Role</div><div class="cs-meta-val">Lead Product Designer</div></div>
-          <div><div class="cs-meta-label">Scope</div><div class="cs-meta-val">UX Research · IA · UI Design</div></div>
-          <div><div class="cs-meta-label">Outcome</div><div class="cs-meta-val">+35% Event Engagement</div></div>
-        </div>
-      </div>
-      <div>
-        <img src="assets/focal-point-library-dashboard.png" alt="Focal Point Redesign" style="width:100%;border-radius:12px;box-shadow:8px 8px 32px rgba(0,0,0,0.15);">
-      </div>
-    </div>
-  </div>
-  <div class="cs-body">
-    <div class="cs-section reveal">
-      <p class="cs-section-label">The Problem</p>
-      <h2 class="cs-section-h2">Understanding the Problem</h2>
-      <div class="cs-cards-3">
-        <div class="cs-card"><div class="cs-card-icon">📋</div><div class="cs-card-title">Lack of User Value</div><div class="cs-card-body">The homepage only displayed a welcome banner and phishing advisory, offering coaches no actionable resources.</div></div>
-        <div class="cs-card"><div class="cs-card-icon">🧭</div><div class="cs-card-title">Poor Navigation</div><div class="cs-card-body">Unclear entry points made it difficult for coaches to find what they needed, leading to abandonment.</div></div>
-        <div class="cs-card"><div class="cs-card-icon">📉</div><div class="cs-card-title">Low Engagement</div><div class="cs-card-body">The static nature didn't encourage repeat visits. Coaches couldn't see events or updates at a glance.</div></div>
-      </div>
-      <img class="cs-img" src="https://framerusercontent.com/images/dMuo8vxBdjB829YexOduUD4MuE.png" alt="Problem analysis">
-    </div>
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Research &amp; Discovery</p>
-      <h2 class="cs-section-h2">How I Found the Answers</h2>
-      <div class="cs-cards-3">
-        <div class="cs-card"><div class="cs-card-icon">🎙</div><div class="cs-card-title">User Interviews</div><div class="cs-card-body">Conducted conversations with coaches and stakeholders to identify priority needs and pain points.</div></div>
-        <div class="cs-card"><div class="cs-card-icon">🗺</div><div class="cs-card-title">Priority Mapping</div><div class="cs-card-body">Identified core resources coaches needed: events, announcements, newsletters, and training materials.</div></div>
-        <div class="cs-card"><div class="cs-card-icon">🏗</div><div class="cs-card-title">Information Architecture</div><div class="cs-card-body">Mapped categories and created a mental model aligned with how coaches naturally think about resources.</div></div>
-      </div>
-      <div class="cs-insights-box">
-        <div class="cs-insights-title">Key Insights</div>
-        <div class="cs-insight">Coaches need quick access to upcoming events and training opportunities</div>
-        <div class="cs-insight">Community recognition and wins drive motivation and engagement</div>
-        <div class="cs-insight">Updates on new tools need to be surfaced immediately</div>
-        <div class="cs-insight">A scannable, card-based layout enables faster information discovery</div>
-      </div>
-    </div>
-    <div class="cs-section reveal">
-      <p class="cs-section-label">The Solution</p>
-      <h2 class="cs-section-h2">A Dashboard That Works for Coaches</h2>
-      <div class="cs-body-text"><p>I redesigned the homepage into a functional dashboard that surfaces the most important resources coaches need, all in one scannable, card-based layout.</p></div>
-      <div class="cs-img-2col" style="margin-top:32px;">
-        <div><img src="https://framerusercontent.com/images/3linHYP6lpCZrDex4pGuwCUcc.png" alt="Announcements"><p style="font-weight:800;margin-top:12px;">📢 Announcements</p></div>
-        <div><img src="https://framerusercontent.com/images/LOvcy9e4glD83yXKNKFT912Oz4.png" alt="Events"><p style="font-weight:800;margin-top:12px;">📅 Upcoming Events</p></div>
-        <div><img src="https://framerusercontent.com/images/oKF7WN0Zb4dUraQtvzPOu80Ag.png" alt="Newsletter"><p style="font-weight:800;margin-top:12px;">📰 Newsletter Access</p></div>
-        <div style="background:var(--project-card);border-radius:12px;padding:28px;display:flex;align-items:center;"><div><p style="font-size:28px;margin-bottom:10px;">🎉</p><p style="font-weight:900;font-size:17px;margin-bottom:8px;">Wins &amp; Library Updates</p><p style="font-size:13px;color:rgba(26,26,26,0.6);font-weight:600;">Community recognition and new tools drive repeat visits.</p></div></div>
-      </div>
-      <img class="cs-img" src="https://framerusercontent.com/images/h4eYjXgqpUb8T2QfmdjJBjZBN4.png" alt="Final design">
-      <img class="cs-img" src="https://framerusercontent.com/images/89k8C7jnaYS5AW0jdAMsv9ecE.png" alt="Final design detail">
-    </div>
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Impact &amp; Results</p>
-      <h2 class="cs-section-h2">Measurable Outcomes</h2>
-      <div class="cs-stats">
-        <div class="cs-stat"><div class="cs-stat-num">10%</div><div class="cs-stat-label">Traffic Increase</div><div class="cs-stat-desc">Post-launch library traffic growth</div></div>
-        <div class="cs-stat"><div class="cs-stat-num">+35%</div><div class="cs-stat-label">Event Engagement</div><div class="cs-stat-desc">More coaches attending events and trainings</div></div>
-        <div class="cs-stat"><div class="cs-stat-num">↑</div><div class="cs-stat-label">Repeat Visits</div><div class="cs-stat-desc">Coaches returning for announcements and updates</div></div>
-      </div>
-      <div class="cs-quotes">
-        <div class="cs-quote"><p class="cs-quote-text">"Much more usable and relevant. I can find what I need without digging around."</p><p class="cs-quote-src">Coach, Focal Point</p></div>
-        <div class="cs-quote"><p class="cs-quote-text">"The dashboard approach makes it easy to see what's happening at a glance."</p><p class="cs-quote-src">Coach, Focal Point</p></div>
-      </div>
-    </div>
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Reflection</p>
-      <h2 class="cs-section-h2">Key Learnings</h2>
-      <div class="cs-learnings">
-        <div class="cs-learning"><div class="cs-learning-num">01</div><div class="cs-learning-title">Internal Tools Need Strong UX</div><div class="cs-learning-body">Even internal tools benefit from thoughtful UX — making a measurable difference in engagement and adoption.</div></div>
-        <div class="cs-learning"><div class="cs-learning-num">02</div><div class="cs-learning-title">Content-Driven Dashboards Drive Engagement</div><div class="cs-learning-body">Dynamic cards created an experience coaches wanted to return to regularly.</div></div>
-        <div class="cs-learning"><div class="cs-learning-num">03</div><div class="cs-learning-title">Qualitative Research Reveals Hidden Pain Points</div><div class="cs-learning-body">User interviews surfaced the motivational role of community recognition.</div></div>
-        <div class="cs-learning"><div class="cs-learning-num">04</div><div class="cs-learning-title">Business &amp; User Goals Can Align</div><div class="cs-learning-body">Community, training, and events objectives aligned with user needs when designed thoughtfully.</div></div>
-      </div>
-    </div>
-  </div>
-  <div class="cs-nav-bottom">
-    <button class="cs-nav-btn" onclick="go('home')">← Back to Home</button>
-    <button class="cs-nav-btn" onclick="go('cs1')">FP Resource Center →</button>
-  </div>
-</div>
-<div id="page-cs1" class="page cs-page">
-  <div class="cs-back-bar">
-    <button class="cs-back-btn" onclick="go('home')">Back to Home</button>
-    <p class="cs-tags" style="margin-bottom:20px;"><span class="cs-tag">Product Design</span><span class="cs-tag">UX</span><span class="cs-tag">Design Systems</span></p>
-    <h1 class="cs-hero-title">FP Resource Center Redesign</h1>
-    <p class="cs-hero-sub">Redesigning the tool hub for better clarity and consistency.</p>
-  </div>
-  <img class="cs-hero-img" src="assets/fp-resource-center-tools.png" alt="FP Resource Center">
-  <img class="cs-hero-img" src="https://framerusercontent.com/images/kfEul72p24hiOl7ENA7s1uzHmk.png" alt="FP Resource Center Detail" style="margin-top:4px;">
-  <div class="cs-body">
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Overview</p>
-      <h2 class="cs-section-h2">Bringing Clarity to Complexity</h2>
-      <div class="cs-body-text"><p>The FP Resource Center suffered from fragmented navigation and inconsistent visual design that made it hard for users to find what they needed.</p><p>The redesign established a clear visual hierarchy, consistent component language, and intuitive pathways — reducing cognitive load and improving task completion.</p></div>
-    </div>
-    <div class="cs-section reveal">
-      <p class="cs-section-label">Key Improvements</p>
-      <h2 class="cs-section-h2">What Changed &amp; Why</h2>
-      <div class="cs-cards-3">
-        <div class="cs-card"><div class="cs-card-icon">🎨</div><div class="cs-card-title">Visual Consistency</div><div class="cs-card-body">Unified color, typography, and component styles — eliminating the patchwork feel of the legacy design.</div></div>
-        <div class="cs-card"><div class="cs-card-icon">🗂</div><div class="cs-card-title">Clearer Navigation</div><div class="cs-card-body">Reorganized information architecture based on user mental models.</div></div>
-        <div class="cs-card"><div class="cs-card-icon">⚡</div><div class="cs-card-title">Faster Workflows</div><div class="cs-card-body">Surfaced frequently used tools at the top level with quick-access patterns for power users.</div></div>
-      </div>
-    </div>
-  </div>
-  <div class="cs-nav-bottom">
-    <button class="cs-nav-btn" onclick="go('home')">← Back to Home</button>
-    <button class="cs-nav-btn" onclick="go('cs2')">Focal Point Redesign →</button>
-  </div>
+<div id="page-cs1" class="page flagship">
+  <header class="flag-hero flag-wrap">
+    <button class="case-link flag-back" onclick="go('home')">← Back to selected work</button>
+    <p class="projects-kicker">FP Resource Center · Resource platform</p>
+    <h1>Making 300+ resources<br>easier to find.</h1>
+    <p class="flag-deck">I redesigned the Resource Center around the work coaches needed to do, from discovery and information architecture to interface design and implementation.</p>
+    <dl class="flag-snapshot">
+      <div><dt>My role</dt><dd>Lead UX Designer</dd></div>
+      <div><dt>Users</dt><dd>Business coaches</dd></div>
+      <div><dt>Scope</dt><dd>Research · IA · UI · Implementation</dd></div>
+      <div><dt>Tools</dt><dd>Figma · Wix</dd></div>
+    </dl>
+    <div class="flag-evidence"><span><strong>12</strong> coach interviews</span><span><strong>300+</strong> resources audited</span><span><strong>+60%</strong> reported satisfaction</span><span><strong>+20%</strong> reported engagement</span></div>
+  </header>
+  <figure class="flag-visual flag-wrap"><img src="assets/fp-resource-center-tools.png" alt="Illustrated preview of the FP Resource Center tools interface"><figcaption>Resource Center interface preview. This illustration introduces the design direction.</figcaption></figure>
+  <nav class="flag-jumps flag-wrap" aria-label="Resource Center case study sections"><a href="#fp-challenge">Challenge</a><a href="#fp-decisions">Design decisions</a><a href="#fp-delivery">Delivery</a><a href="#fp-impact">Impact</a></nav>
+  <main class="flag-wrap">
+    <section class="flag-section flag-two" id="fp-challenge">
+      <div><p class="projects-kicker">The challenge</p><h2>The organization made sense internally. It did less to help coaches find a tool.</h2></div>
+      <div class="flag-prose"><p>Resources were grouped by department, while coaches were looking for ways to complete a task. A dense grid gave tools similar visual weight, leaving users to read through labels to decide where to go.</p><p>The design problem was to make a large collection easier to navigate: clearer entry points, a stronger hierarchy, and consistent interactions across the experience.</p></div>
+    </section>
+    <section class="flag-section flag-research">
+      <p class="projects-kicker">Discovery → direction</p><h2>Research changed what the interface needed to prioritize.</h2>
+      <div class="flag-three"><div><h3>12 coach interviews</h3><p>Coaches described difficulty finding resources relevant to their workflows and a preference for task-based organization.</p><strong>Design implication</strong><p>Use the coach’s task as the starting point for navigation.</p></div><div><h3>300+ resources audited</h3><p>The audit mapped existing content against user needs and identified redundant resources and gaps.</p><strong>Design implication</strong><p>Clarify the structure before polishing individual tiles.</p></div><div><h3>Interface review</h3><p>Inconsistent patterns and weak visual hierarchy made the collection harder to scan and navigate.</p><strong>Design implication</strong><p>Give labels, actions, and reusable components consistent roles.</p></div></div>
+    </section>
+    <section class="flag-section" id="fp-decisions">
+      <p class="projects-kicker">Decision 01 · Information architecture</p><h2>Organize around tasks coaches recognize.</h2>
+      <p class="flag-lead">I reorganized a department-based collection into a workflow-aligned structure, giving users a clearer way to choose where to begin.</p>
+      <div class="flag-comparison"><div><span>Before</span><h3>Start with the organization</h3><ol><li>Choose an internal department</li><li>Scan a uniform set of resource tiles</li><li>Read labels to find a relevant tool</li></ol></div><div><span>After</span><h3>Start with the work</h3><ol><li>Identify the task or workflow</li><li>Scan clearly labeled resources</li><li>Use the relevant tool’s action</li></ol></div></div>
+      <p class="flag-caption">Conceptual summary of the change in organization, rather than a reproduction of the original navigation.</p>
+    </section>
+    <section class="flag-section flag-two">
+      <div><p class="projects-kicker">Decision 02 · Hierarchy</p><h2>Make the next action easier to identify.</h2></div>
+      <div class="flag-prose"><p>The old grid asked users to inspect every tile. I introduced clearer labels, consistent spacing, and stronger visual hierarchy to help coaches distinguish resources and their actions.</p><p>This connected the information architecture to the interface: organizing content was only useful if people could scan it and decide what to do next.</p></div>
+    </section>
+    <section class="flag-section flag-two">
+      <div><p class="projects-kicker">Decision 03 · UI systems</p><h2>Build familiarity across Focal Point tools.</h2></div>
+      <div class="flag-prose"><p>I aligned typography, icons, and interaction patterns with the FP brand and the updated Library. The aim was a consistent experience as coaches moved between platforms.</p><p>A shared visual language also gave the Resource Center a repeatable way to present tools, instead of treating every resource as a separate design problem.</p></div>
+    </section>
+    <section class="flag-section flag-delivery" id="fp-delivery">
+      <p class="projects-kicker">My contribution</p><h2>From discovery to the implemented experience.</h2>
+      <div class="flag-two"><div class="flag-prose"><p>As Lead UX Designer, I connected the research findings to the resource structure and interface, then translated the high-fidelity Figma design into Wix with responsive behavior across desktop and mobile.</p></div><ul class="flag-contributions"><li>Conducted discovery interviews with 12 coaches.</li><li>Audited and mapped 300+ existing resources.</li><li>Defined workflow-aligned resource organization.</li><li>Designed hierarchy, navigation, and high-fidelity UI in Figma.</li><li>Implemented the redesigned experience in Wix.</li></ul></div>
+    </section>
+    <section class="flag-section" id="fp-impact">
+      <p class="projects-kicker">Reported outcomes</p><h2>A clearer experience for everyday resource discovery.</h2>
+      <div class="flag-results"><div><strong>+60%</strong><span>User satisfaction</span></div><div><strong>+20%</strong><span>User engagement</span></div></div>
+      <p class="flag-lead">Coaches reported clearer pathways to daily tools and an experience that felt easier to use.</p>
+    </section>
+    <section class="flag-section flag-two">
+      <div><p class="projects-kicker">Reflection & next steps</p><h2>Make the structure visible in the interface.</h2></div>
+      <div class="flag-prose"><p>This project connected two layers of the same problem: how resources were organized and how coaches could recognize them on screen. The redesign needed both task-aligned architecture and a consistent hierarchy.</p><h3>What I would validate next</h3><p>I would compare success and time-on-task for common resource-finding scenarios, then examine where newer and experienced coaches still take different paths. That would help distinguish improvements in visual clarity from improvements in task completion.</p></div>
+    </section>
+    <footer class="flag-footer"><button class="case-link" onclick="go('home')">← Selected work</button><button class="case-link" onclick="go('cs2')">Next: Focal Point Library ↗</button></footer>
+  </main>
 </div>
 <script>
 function go(id){
