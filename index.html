@@ -587,6 +587,69 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
   .hero-avatar{height:170px;}
   .hero-btns{gap:8px;}
 }
+
+/* One shared page grid and one action style. */
+:root{--content-width:1120px;--page-gutter:max(24px,calc((100vw - var(--content-width))/2));}
+#nav{padding-left:var(--page-gutter);padding-right:var(--page-gutter);}
+#projects-anchor,.skills,.about-section,.contact-section{padding-left:var(--page-gutter);padding-right:var(--page-gutter);}
+#projects-anchor{padding-top:56px;padding-bottom:72px;}
+.editorial-projects .projects-header,.case-rows,.skills-header,.skills-grid,.about-card-wrap{max-width:var(--content-width);width:100%;margin-left:auto;margin-right:auto;}
+.editorial-projects .projects-header{margin-bottom:40px;}
+.case-rows{gap:88px;}
+.case-row{gap:36px;grid-template-columns:minmax(0,40fr) minmax(0,60fr);}
+.case-row-reverse{grid-template-columns:minmax(0,60fr) minmax(0,40fr);}
+.case-copy{padding:0;}
+.case-copy h3{font-size:clamp(28px,2.8vw,38px);margin-bottom:16px;}
+.case-summary{margin-bottom:16px;}
+.case-ownership{margin-bottom:12px;}
+.case-skills{margin-bottom:20px;}
+.skills{padding-top:64px;padding-bottom:64px;}
+.about-section{padding-top:64px;padding-bottom:64px;}
+.contact-section{padding-top:64px;padding-bottom:64px;gap:56px;}
+.project-archive-link.site-action{margin:40px 0 0;}
+.flag-wrap{width:calc(100% - 2 * var(--page-gutter));max-width:var(--content-width);}
+.work-archive{max-width:none;padding-left:var(--page-gutter);padding-right:var(--page-gutter);}
+.contact-links{flex-wrap:wrap;align-items:center;gap:16px;}
+.site-action{
+ display:inline-flex!important;align-items:center;justify-content:center;gap:10px;
+ width:fit-content;max-width:100%;min-height:48px;
+ background:var(--dark)!important;color:#fff!important;
+ font-family:var(--font)!important;font-size:15px!important;font-weight:800!important;
+ line-height:1.4;letter-spacing:.02em!important;text-transform:none!important;
+ padding:14px 28px!important;border:0!important;border-radius:8px!important;
+ text-decoration:none!important;box-shadow:4px 4px 0 rgba(0,0,0,.25)!important;
+ transition:transform .15s,box-shadow .15s!important;
+}
+.site-action:hover{transform:translate(-2px,-2px)!important;box-shadow:6px 6px 0 rgba(0,0,0,.25)!important;filter:none!important;opacity:1!important;}
+.site-action:focus-visible{outline:3px solid var(--teal);outline-offset:5px;}
+.site-action span[aria-hidden]{font-size:18px;}
+.contact-form .site-action{align-self:flex-start;}
+@media(min-width:901px){
+ .hero{padding-left:var(--page-gutter);padding-right:var(--page-gutter);padding-top:112px;min-height:600px;height:clamp(600px,74vh,700px);}
+ .hero-content{max-width:550px;}
+ .hero-avatar{right:calc(var(--page-gutter) + 110px);}
+ .sprite-chickens{left:var(--page-gutter);}
+}
+@media(max-width:900px){
+ .case-row,.case-row-reverse{grid-template-columns:1fr;gap:24px;}
+ .case-rows{gap:64px;}
+ .case-row-reverse .case-copy,.case-row-reverse .case-image{grid-column:auto;grid-row:auto;}
+ .hero{padding-left:var(--page-gutter);padding-right:var(--page-gutter);}
+ .hero-content{max-width:none;}
+ .hero-avatar{right:var(--page-gutter);}
+ .sprite-chickens{left:var(--page-gutter);}
+ .site-action{font-size:14px!important;padding:13px 20px!important;}
+ .contact-section{gap:32px;}
+}
+@media(max-width:560px){
+ :root{--page-gutter:20px;}
+ #projects-anchor,.skills,.about-section,.contact-section{padding-top:48px;padding-bottom:48px;}
+ .editorial-projects .projects-header{margin-bottom:28px;}
+ .case-rows{gap:56px;}
+ #nav{padding-left:20px;padding-right:20px;}
+ .flag-footer{align-items:flex-start;flex-direction:column;}
+}
+@media(prefers-reduced-motion:reduce){.site-action{transition:none!important;}}
 </style>
 </head>
 <body>
@@ -609,7 +672,7 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
       <p class="hero-role">Product Designer</p>
       <p class="hero-subtitle">I design resource platforms that help people find what they need and get work done—from user research and information architecture to interface design and iteration.</p>
       <div class="hero-btns">
-        <a href="#" class="btn-primary" onclick="go('home');document.getElementById('projects-anchor').scrollIntoView({behavior:'smooth'});return false;">View My Work</a>
+        <a href="#" class="site-action btn-primary" onclick="go('home');document.getElementById('projects-anchor').scrollIntoView({behavior:'smooth'});return false;">View My Work</a>
         <a href="https://drive.google.com/file/d/16KX1mPE6mJg9DO-45j1o8fYiDNcC44k3/view?usp=sharing" target="_blank" class="btn-secondary">View Resume</a>
       </div>
     </div>
@@ -632,7 +695,7 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
           <p class="case-impact">Coaches reported clearer paths to everyday tools</p>
           <p class="case-ownership">Lead UX Designer · 12 coach interviews, resource audit, and information architecture.</p>
           <p class="case-skills">Information architecture · UI systems · Workflows</p>
-          <a href="#" class="case-link" onclick="go('cs1');return false;">View case study <span aria-hidden="true">↗</span><span class="sr-only">: FP Resource Center Redesign</span></a>
+          <a href="#" class="site-action case-link" onclick="go('cs1');return false;">View case study <span aria-hidden="true">↗</span><span class="sr-only">: FP Resource Center Redesign</span></a>
         </div>
         <a class="case-image" href="#" onclick="go('cs1');return false;" aria-label="View FP Resource Center case study"><img src="assets/fp-resource-center-tools.png" alt="FP Resource Center tools dashboard" loading="lazy" decoding="async"></a>
       </article>
@@ -644,12 +707,12 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
           <p class="case-impact">+35% event engagement</p>
           <p class="case-ownership">Lead Product Designer · User research, dashboard structure, and UI design.</p>
           <p class="case-skills">Dashboard UX · Content strategy</p>
-          <a href="#" class="case-link" onclick="go('cs2');return false;">View case study <span aria-hidden="true">↗</span><span class="sr-only">: Focal Point Library Redesign</span></a>
+          <a href="#" class="site-action case-link" onclick="go('cs2');return false;">View case study <span aria-hidden="true">↗</span><span class="sr-only">: Focal Point Library Redesign</span></a>
         </div>
         <a class="case-image" href="#" onclick="go('cs2');return false;" aria-label="View Focal Point Library case study"><img src="assets/focal-point-library-dashboard.png" alt="Focal Point Library dashboard with search, events, and resources" loading="lazy" decoding="async"></a>
       </article>
     </div>
-    <a class="project-archive-link" href="#" onclick="go('work');return false;">Browse all projects <span aria-hidden="true">↗</span></a>
+    <a class="site-action project-archive-link" href="#" onclick="go('work');return false;">Browse all projects <span aria-hidden="true">↗</span></a>
   </section>
   <section class="skills" aria-labelledby="skills-heading">
     <div class="skills-header"><p class="skills-eyebrow">Creative thinking. Practical design.</p><h2 class="skills-title" id="skills-heading">What I Do</h2></div>
@@ -684,12 +747,12 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
         <input type="text" placeholder="Jane Smith" />
         <input type="email" placeholder="jane@email.com" />
         <textarea placeholder="..."></textarea>
-        <button class="btn-submit">Submit</button>
+        <button class="site-action btn-submit">Submit</button>
       </div>
       <div class="contact-links">
-        <a href="#" class="contact-link">LinkedIn ↗</a>
+        <a href="#" class="site-action contact-link">LinkedIn ↗</a>
         <a href="https://drive.google.com/file/d/16KX1mPE6mJg9DO-45j1o8fYiDNcC44k3/view?usp=sharing" target="_blank" class="contact-link">Resume ↗</a>
-        <a href="#" class="contact-link">Dribbble ↗</a>
+        <a href="#" class="site-action contact-link">Dribbble ↗</a>
       </div>
     </div>
     <div class="contact-dog">
@@ -703,12 +766,12 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
     <p class="archive-intro">A complete index of my published product design case studies.</p>
     <a class="archive-entry" href="#" onclick="go('cs1');return false;"><span class="archive-number">01</span><div><h2>FP Resource Center Redesign</h2><p>Resource platform · Research, IA, and UI design</p></div><span class="archive-result">Positive coach feedback</span><span aria-hidden="true">↗</span></a>
     <a class="archive-entry" href="#" onclick="go('cs2');return false;"><span class="archive-number">02</span><div><h2>Focal Point Library Redesign</h2><p>Internal dashboard · Research and product design</p></div><span class="archive-result">+35% event engagement</span><span aria-hidden="true">↗</span></a>
-    <a class="case-link" href="#" onclick="go('home');return false;">← Back to highlights</a>
+    <a class="site-action case-link" href="#" onclick="go('home');return false;">← Back to highlights</a>
   </section>
 </div>
 <div id="page-cs2" class="page cs-page">
   <div class="cs-back-bar" style="background:var(--sage);">
-    <button class="cs-back-btn" onclick="go('home')">Back to Home</button>
+    <button class="site-action cs-back-btn" onclick="go('home')">Back to Home</button>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;">
       <span class="cs-tag" style="background:var(--teal-dark);">UX Design</span>
       <span class="cs-tag" style="background:#B5A88A;color:var(--dark);">Research</span>
@@ -814,13 +877,13 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
     </div>
   </div>
   <div class="cs-nav-bottom">
-    <button class="cs-nav-btn" onclick="go('home')">← Back to Home</button>
-    <button class="cs-nav-btn" onclick="go('cs1')">FP Resource Center →</button>
+    <button class="site-action cs-nav-btn" onclick="go('home')">← Back to Home</button>
+    <button class="site-action cs-nav-btn" onclick="go('cs1')">FP Resource Center →</button>
   </div>
 </div>
 <div id="page-cs1" class="page flagship">
   <header class="flag-hero flag-wrap">
-    <button class="case-link flag-back" onclick="go('home')">← Back to selected work</button>
+    <button class="site-action case-link flag-back" onclick="go('home')">← Back to selected work</button>
     <p class="projects-kicker">FP Resource Center · Resource platform</p>
     <h1>Making 300+ resources<br>easier to find.</h1>
     <p class="flag-deck">I redesigned the Resource Center around the work coaches needed to do, from discovery and information architecture to interface design and implementation.</p>
@@ -870,7 +933,7 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
       <div><p class="projects-kicker">Reflection & next steps</p><h2>Make the structure visible in the interface.</h2></div>
       <div class="flag-prose"><p>This project connected two layers of the same problem: how resources were organized and how coaches could recognize them on screen. The redesign needed both task-aligned architecture and a consistent hierarchy.</p><h3>What I would validate next</h3><p>I would compare success and time-on-task for common resource-finding scenarios, then examine where newer and experienced coaches still take different paths. That would help distinguish improvements in visual clarity from improvements in task completion.</p></div>
     </section>
-    <footer class="flag-footer"><button class="case-link" onclick="go('home')">← Selected work</button><button class="case-link" onclick="go('cs2')">Next: Focal Point Library ↗</button></footer>
+    <footer class="flag-footer"><button class="site-action case-link" onclick="go('home')">← Selected work</button><button class="site-action case-link" onclick="go('cs2')">Next: Focal Point Library ↗</button></footer>
   </main>
 </div>
 <script>
