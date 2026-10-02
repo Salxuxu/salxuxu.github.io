@@ -1032,6 +1032,25 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 .mobile-ui-example figcaption span{display:block;margin-top:12px;font-size:12px;}
 @media(max-width:760px){.mobile-ui-gallery{grid-template-columns:1fr;}.mobile-ui-example{padding:20px;}.mobile-ui-example h4{font-size:21px;}}
 
+
+/* Compact Coach Central project introduction */
+#page-cs1 .cs-back-bar{padding-top:96px;padding-bottom:32px;}
+#page-cs1 .cs-back-btn{margin-bottom:24px;}
+#page-cs1 .coach-library-hero{padding-top:0;gap:36px;align-items:start;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);}
+#page-cs1 .coach-project-tags{gap:8px;margin-bottom:20px;}
+#page-cs1 .coach-project-tags .cs-tag{font-size:10px;padding:5px 10px;letter-spacing:.04em;}
+#page-cs1 .cs-hero-title{font-size:clamp(36px,4.5vw,56px);margin-bottom:14px;}
+#page-cs1 .cs-hero-sub{margin-bottom:0;max-width:50ch;}
+#page-cs1 .coach-library-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 24px;margin-top:24px;}
+#page-cs1 .coach-library-meta>div:nth-child(2){grid-column:1 / -1;}
+#page-cs1 .coach-library-meta>div:last-child{grid-column:2;grid-row:1;}
+#page-cs1 .cs-meta-label{font-size:11px;font-weight:800;color:#536059;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px;}
+#page-cs1 .cs-meta-val{font-size:14px;line-height:1.5;font-weight:600;}
+#page-cs1 .coach-library-figure img{box-shadow:none;border-radius:0;}
+#page-cs1 .coach-library-figure figcaption{margin-top:8px;font-size:12px;}
+@media(max-width:900px){#page-cs1 .cs-back-bar{padding-top:88px;padding-bottom:28px;}#page-cs1 .coach-library-hero{grid-template-columns:1fr;gap:24px;}#page-cs1 .coach-library-meta{max-width:560px;}}
+@media(max-width:480px){#page-cs1 .coach-project-tags{margin-bottom:16px;}#page-cs1 .coach-library-meta{gap:14px 16px;margin-top:20px;}}
+
 </style>
 </head>
 <body>
@@ -1285,8 +1304,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 <div id="page-cs1" class="page cs-page coach-library-style">
 <header class="cs-back-bar">
 <a href="#projects-anchor" class="site-action cs-back-btn" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
-<div class="cs-tags coach-project-tags"><span class="cs-tag" style="background:var(--teal-dark)">Product Design</span><span class="cs-tag" style="background:var(--tan);color:var(--dark)">Mobile UX</span><span class="cs-tag" style="background:#C8693A">Product Development</span></div>
-<div class="coach-library-hero"><div><h1 class="cs-hero-title">Coach Central</h1><p class="cs-hero-sub">Bringing resources, community, and events into one connected digital experience for 150+ coaches.</p>
+<div class="coach-library-hero"><div class="coach-library-heading"><div class="cs-tags coach-project-tags"><span class="cs-tag" style="background:var(--teal-dark)">Product Design</span><span class="cs-tag" style="background:var(--tan);color:var(--dark)">Mobile UX</span><span class="cs-tag" style="background:#C8693A">Product Development</span></div><h1 class="cs-hero-title">Coach Central</h1><p class="cs-hero-sub">Bringing resources, community, and events into one connected digital experience for 150+ coaches.</p>
 <dl class="coach-library-meta"><div><dt class="cs-meta-label">Role</dt><dd class="cs-meta-val">Product Designer</dd></div><div><dt class="cs-meta-label">Scope</dt><dd class="cs-meta-val">IA · Mobile UX · UI · Development</dd></div><div><dt class="cs-meta-label">Reach</dt><dd class="cs-meta-val">150+ coaches · 5 departments</dd></div></dl></div>
 <figure class="coach-library-figure"><img src="assets/coach-central-desktop-mobile.svg" alt="Coach Central dashboard and mobile home experience" width="1536" height="1024" decoding="async"><figcaption>One connected experience across desktop and mobile.</figcaption></figure></div>
 </header>
