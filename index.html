@@ -716,7 +716,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
  .archive-entry{grid-template-columns:140px minmax(0,1fr);gap:20px;}
  .archive-thumbnail{width:140px;grid-column:1;grid-row:1 / span 2;}
  .archive-entry .archive-result{grid-column:auto;}
- .archive-entry .archive-open{grid-column:2;grid-row:2;justify-self:start;}
+ .archive-entry>.archive-open:last-child{grid-column:2;grid-row:2;justify-self:start;}
 }
 @media(max-width:560px){
  .work-archive{padding-top:88px;padding-bottom:48px;}
@@ -725,7 +725,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
  .archive-entry{grid-template-columns:1fr;gap:16px;padding:24px 0;}
  .archive-thumbnail{width:100%;aspect-ratio:1.8;object-fit:contain;background:#e9f3f1;grid-column:auto;grid-row:auto;}
  .archive-entry h2{font-size:23px;}
- .archive-entry .archive-open{grid-column:1;grid-row:auto;width:100%;justify-self:stretch;}
+ .archive-entry>.archive-open:last-child{grid-column:1;grid-row:auto;width:100%;justify-self:stretch;}
 }
 @media(prefers-reduced-motion:reduce){.archive-entry{transition:none;}}
 </style>
