@@ -146,7 +146,7 @@ body.scrolled-past-hero .hero::before{opacity:0;}
   transition:transform .35s ease;
 }
 /* Match the Library preview's inset presentation without cropping the Tools image. */
-.project-card-img img[src="assets/fp-resource-center-tools.png"]{
+.project-card-img img[src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22720%22%20viewBox%3D%220%200%201200%20720%22%3E%3Crect%20width%3D%221200%22%20height%3D%22720%22%20rx%3D%2228%22%20fill%3D%22%23172f37%22%2F%3E%3Cg%20font-family%3D%22Arial%2Csans-serif%22%3E%3Ctext%20x%3D%2270%22%20y%3D%2290%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2218%22%20letter-spacing%3D%223%22%3EONE%20CONNECTED%20COACHING%20ECOSYSTEM%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22164%22%20fill%3D%22%23fff%22%20font-size%3D%2260%22%20font-weight%3D%22700%22%3ECoach%20Central%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22209%22%20fill%3D%22%23c5d4d7%22%20font-size%3D%2224%22%3EResources%2C%20community%20and%20events%20in%20one%20place.%3C%2Ftext%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2379cfc5%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M230%20410V325H970V410M600%20325V410%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23254650%22%20stroke%3D%22%2342656e%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%2270%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22440%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22810%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fff%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22467%22%3EResources%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22467%22%3ECommunity%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22467%22%3EEvents%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23c5d4d7%22%20font-size%3D%2221%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22513%22%3E300%2B%20reorganized%20resources%3C%2Ftext%3E%3Ctext%20x%3D%22102%22%20y%3D%22550%22%3ESearch%20and%20categorization%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22513%22%3EDiscussions%20and%20tagging%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22550%22%3EPrivate%20conversations%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22513%22%3ETraining%20and%20connection%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22550%22%3EDesigned%20for%20mobile%20use%3C%2Ftext%3E%3C%2Fg%3E%3Ctext%20x%3D%2270%22%20y%3D%22673%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2217%22%20letter-spacing%3D%222%22%3EPLATFORM%20STRUCTURE%20%C2%B7%20CASE%20STUDY%20OVERVIEW%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E"]{
   padding:5%;
   background:linear-gradient(135deg,#EAFBFA 0%,#F8FBFF 100%);
 }
@@ -816,6 +816,56 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
  .contact-section{gap:20px;}
 }
 
+
+.coach-case{background:#111;color:#eee;padding:104px var(--page-gutter) 64px;font-family:Arial,Helvetica,sans-serif;}
+.coach-wrap{max-width:var(--content-width);margin:auto;}
+.coach-panel{background:#202020;border:1px solid #383838;border-radius:24px;padding:40px;margin-bottom:24px;}
+.coach-hero{padding:48px;}
+.coach-kicker,.coach-small{color:#a5d9d2;font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;}
+.coach-kicker{margin-bottom:20px;}
+.coach-case h1{font-size:clamp(42px,6vw,72px);line-height:1.05;margin:0 0 24px;letter-spacing:-.035em;}
+.coach-case h2{font-size:clamp(26px,3vw,36px);line-height:1.2;margin:0 0 20px;letter-spacing:-.025em;}
+.coach-case h3{font-size:21px;line-height:1.3;margin:12px 0;}
+.coach-case p{font-size:17px;line-height:1.7;color:#bfc5c4;max-width:75ch;}
+.coach-case p.coach-kicker{font-size:12px;line-height:1.5;}
+.coach-case .coach-deck{font-size:clamp(20px,2.5vw,26px);}
+.coach-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:32px 0;}
+.coach-metrics>div{border:1px solid #414141;border-radius:16px;padding:24px;}
+.coach-metrics dt{font-size:36px;font-weight:700;line-height:1.2;margin-bottom:10px;}
+.coach-metrics dd{margin:0;color:#bfc5c4;font-size:15px;line-height:1.5;}
+.coach-overview{margin:32px 0 0;}
+.coach-overview img{width:100%;height:auto;display:block;border-radius:16px;}
+.coach-case figcaption{font-size:13px;color:#a5aba9;line-height:1.6;margin-top:12px;}
+.coach-case .coach-back{margin-bottom:32px;}
+.coach-jumps{position:static;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;padding:0;margin:0 0 24px;height:auto;background:none;border:none;}
+.coach-jumps a{display:inline-flex;align-items:center;min-height:44px;padding:10px 14px;color:#c2e9e3;border:1px solid #414141;border-radius:8px;font-size:14px;text-decoration:none;}
+.coach-jumps a:hover{background:#263c37;}
+.coach-case section{scroll-margin-top:88px;}
+.coach-split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
+.coach-flow{margin:0;text-align:center;}
+.coach-sources{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.coach-sources span{padding:16px 8px;border:1px solid #414141;border-radius:12px;font-size:14px;line-height:1.4;}
+.coach-flow-line{height:36px;width:2px;background:#7bafa5;margin:auto;}
+.coach-flow strong{display:block;padding:22px;border:1px solid #7bafa5;border-radius:12px;background:#253b36;font-size:24px;}
+.coach-role-flow,.coach-tags{list-style:none;display:flex;flex-wrap:wrap;gap:12px;padding:0;margin:24px 0 0;}
+.coach-role-flow li,.coach-tags li{border:1px solid #484848;border-radius:24px;padding:12px 18px;line-height:1.4;font-size:15px;}
+.coach-role-flow .coach-highlight{background:#2d4d43;border-color:#80bba8;color:#d9f5e8;}
+.coach-comparison,.coach-three{display:grid;gap:24px;margin-top:28px;}
+.coach-comparison{grid-template-columns:1fr 1fr;}
+.coach-three{grid-template-columns:repeat(3,minmax(0,1fr));}
+.coach-comparison>div,.coach-three>div{border-top:1px solid #484848;padding-top:24px;}
+.coach-features svg{width:32px;height:32px;stroke:#a5d9d2;stroke-width:1.7;fill:none;margin-bottom:12px;}
+.coach-process{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;padding:0;margin:28px 0 0;list-style:none;counter-reset:step;}
+.coach-process li{counter-increment:step;border-top:1px solid #555;padding:16px 0;font-size:14px;line-height:1.4;}
+.coach-process li:before{content:"0" counter(step);display:block;color:#a5d9d2;margin-bottom:12px;}
+.coach-impact-metrics{grid-template-columns:repeat(4,minmax(0,1fr));}
+.coach-case .coach-reflection{font-size:23px;color:#eee;}
+.coach-case .site-action{border:1px solid #777!important;}
+.coach-case .case-return{background:transparent!important;color:#eee!important;}
+.coach-case a:focus-visible{outline:3px solid #a5d9d2;outline-offset:4px;}
+@media(max-width:760px){.coach-panel,.coach-hero{padding:28px;}.coach-split{grid-template-columns:1fr;gap:24px;}.coach-three{grid-template-columns:1fr;}.coach-process{grid-template-columns:repeat(3,1fr);}.coach-impact-metrics{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:480px){.coach-case{padding-top:88px;}.coach-panel,.coach-hero{padding:24px 20px;border-radius:18px;}.coach-metrics{grid-template-columns:1fr;gap:10px;}.coach-metrics>div{padding:16px;}.coach-metrics dt{font-size:30px;}.coach-comparison{grid-template-columns:1fr;}.coach-sources{gap:6px;}.coach-sources span{font-size:12px;}.coach-impact-metrics{grid-template-columns:repeat(2,1fr);}.coach-case p{font-size:16px;}.coach-case .coach-reflection{font-size:20px;}}
+
 </style>
 </head>
 <body>
@@ -855,15 +905,15 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
     <div class="case-rows">
       <article class="case-row reveal">
         <div class="case-copy">
-          <p class="case-eyebrow"><span>01</span> · Resource platform</p>
-          <h3>FP Resource Center Redesign</h3>
-          <p class="case-summary">Reorganized 300+ resources around coach workflows, creating clearer paths to everyday tools.</p>
-          <p class="case-impact">Coaches reported clearer paths to everyday tools</p>
-          <p class="case-ownership">Lead UX Designer · 12 coach interviews, resource audit, and information architecture.</p>
-          <p class="case-skills">Information architecture · UI systems · Workflows</p>
-          <a href="#cs1" class="site-action case-link" onclick="go('cs1');return false;">View case study <span class="sr-only">: FP Resource Center Redesign</span></a>
+          <p class="case-eyebrow"><span>01</span> · Coaching ecosystem</p>
+          <h3>Coach Central</h3>
+          <p class="case-summary">A centralized platform connecting resources, community, and events for 150+ coaches.</p>
+          <p class="case-impact">300+ resources migrated · 5 departments supported</p>
+          <p class="case-ownership">Product Designer · Resource migration, mobile UX, community features, and development.</p>
+          <p class="case-skills">Information architecture · Mobile UX · Product development</p>
+          <a href="#cs1" class="site-action case-link" onclick="go('cs1');return false;">View case study <span class="sr-only">: Coach Central</span></a>
         </div>
-        <a class="case-image" href="#cs1" onclick="go('cs1');return false;" aria-label="View FP Resource Center case study"><img src="assets/fp-resource-center-tools.png" alt="FP Resource Center tools dashboard" loading="lazy" decoding="async"></a>
+        <a class="case-image" href="#cs1" onclick="go('cs1');return false;" aria-label="View Coach Central case study"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22720%22%20viewBox%3D%220%200%201200%20720%22%3E%3Crect%20width%3D%221200%22%20height%3D%22720%22%20rx%3D%2228%22%20fill%3D%22%23172f37%22%2F%3E%3Cg%20font-family%3D%22Arial%2Csans-serif%22%3E%3Ctext%20x%3D%2270%22%20y%3D%2290%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2218%22%20letter-spacing%3D%223%22%3EONE%20CONNECTED%20COACHING%20ECOSYSTEM%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22164%22%20fill%3D%22%23fff%22%20font-size%3D%2260%22%20font-weight%3D%22700%22%3ECoach%20Central%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22209%22%20fill%3D%22%23c5d4d7%22%20font-size%3D%2224%22%3EResources%2C%20community%20and%20events%20in%20one%20place.%3C%2Ftext%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2379cfc5%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M230%20410V325H970V410M600%20325V410%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23254650%22%20stroke%3D%22%2342656e%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%2270%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22440%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22810%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fff%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22467%22%3EResources%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22467%22%3ECommunity%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22467%22%3EEvents%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23c5d4d7%22%20font-size%3D%2221%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22513%22%3E300%2B%20reorganized%20resources%3C%2Ftext%3E%3Ctext%20x%3D%22102%22%20y%3D%22550%22%3ESearch%20and%20categorization%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22513%22%3EDiscussions%20and%20tagging%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22550%22%3EPrivate%20conversations%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22513%22%3ETraining%20and%20connection%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22550%22%3EDesigned%20for%20mobile%20use%3C%2Ftext%3E%3C%2Fg%3E%3Ctext%20x%3D%2270%22%20y%3D%22673%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2217%22%20letter-spacing%3D%222%22%3EPLATFORM%20STRUCTURE%20%C2%B7%20CASE%20STUDY%20OVERVIEW%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Coach Central platform structure diagram" loading="lazy" decoding="async"></a>
       </article>
       <article class="case-row case-row-reverse reveal">
         <div class="case-copy">
@@ -941,9 +991,9 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
       <p class="archive-count">2 case studies</p>
     </header>
     <div class="archive-list">
-      <a class="archive-entry" href="#cs1" onclick="go('cs1');return false;" aria-label="View case study: FP Resource Center Redesign">
-        <img class="archive-thumbnail" src="assets/fp-resource-center-tools.png" alt="" loading="lazy" />
-        <div class="archive-copy"><p class="archive-category">01 · Resource platform</p><h2>FP Resource Center Redesign</h2><p class="archive-description">Reorganized 300+ resources around the way coaches work.</p><p class="archive-result">Positive coach feedback</p></div>
+      <a class="archive-entry" href="#cs1" onclick="go('cs1');return false;" aria-label="View case study: Coach Central">
+        <img class="archive-thumbnail" src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22720%22%20viewBox%3D%220%200%201200%20720%22%3E%3Crect%20width%3D%221200%22%20height%3D%22720%22%20rx%3D%2228%22%20fill%3D%22%23172f37%22%2F%3E%3Cg%20font-family%3D%22Arial%2Csans-serif%22%3E%3Ctext%20x%3D%2270%22%20y%3D%2290%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2218%22%20letter-spacing%3D%223%22%3EONE%20CONNECTED%20COACHING%20ECOSYSTEM%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22164%22%20fill%3D%22%23fff%22%20font-size%3D%2260%22%20font-weight%3D%22700%22%3ECoach%20Central%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22209%22%20fill%3D%22%23c5d4d7%22%20font-size%3D%2224%22%3EResources%2C%20community%20and%20events%20in%20one%20place.%3C%2Ftext%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2379cfc5%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M230%20410V325H970V410M600%20325V410%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23254650%22%20stroke%3D%22%2342656e%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%2270%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22440%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22810%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fff%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22467%22%3EResources%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22467%22%3ECommunity%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22467%22%3EEvents%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23c5d4d7%22%20font-size%3D%2221%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22513%22%3E300%2B%20reorganized%20resources%3C%2Ftext%3E%3Ctext%20x%3D%22102%22%20y%3D%22550%22%3ESearch%20and%20categorization%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22513%22%3EDiscussions%20and%20tagging%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22550%22%3EPrivate%20conversations%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22513%22%3ETraining%20and%20connection%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22550%22%3EDesigned%20for%20mobile%20use%3C%2Ftext%3E%3C%2Fg%3E%3Ctext%20x%3D%2270%22%20y%3D%22673%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2217%22%20letter-spacing%3D%222%22%3EPLATFORM%20STRUCTURE%20%C2%B7%20CASE%20STUDY%20OVERVIEW%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="" loading="lazy" />
+        <div class="archive-copy"><p class="archive-category">01 · Coaching ecosystem</p><h2>Coach Central</h2><p class="archive-description">One connected experience for resources, community, and events.</p><p class="archive-result">150+ coaches · 300+ resources</p></div>
         <span class="archive-open">View case study</span>
       </a>
       <a class="archive-entry" href="#cs2" onclick="go('cs2');return false;" aria-label="View case study: Focal Point Library Redesign">
@@ -1063,64 +1113,32 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
   </div>
   <div class="cs-nav-bottom">
     <button type="button" class="site-action cs-nav-btn" onclick="go('home','projects-anchor')">Back to selected work</button>
-    <button type="button" class="site-action cs-nav-btn" onclick="go('cs1')">FP Resource Center</button>
+    <button type="button" class="site-action cs-nav-btn" onclick="go('cs1')">Coach Central</button>
   </div>
 </div>
-<div id="page-cs1" class="page flagship">
-  <header class="flag-hero flag-wrap">
-    <button type="button" class="site-action case-link flag-back" onclick="go('home','projects-anchor')">Back to selected work</button>
-    <p class="projects-kicker">FP Resource Center · Resource platform</p>
-    <h1>Making 300+ resources<br>easier to find.</h1>
-    <p class="flag-deck">I redesigned the Resource Center around the work coaches needed to do, from discovery and information architecture to interface design and implementation.</p>
-    <dl class="flag-snapshot">
-      <div><dt>My role</dt><dd>Lead UX Designer</dd></div>
-      <div><dt>Users</dt><dd>Business coaches</dd></div>
-      <div><dt>Scope</dt><dd>Research · IA · UI · Implementation</dd></div>
-      <div><dt>Tools</dt><dd>Figma · Wix</dd></div>
-    </dl>
-    <div class="flag-evidence"><span><strong>12</strong> coach interviews</span><span><strong>300+</strong> resources audited</span><span><strong>Coach feedback</strong> informed the outcome</span></div>
-  </header>
-  <figure class="flag-visual flag-wrap"><img src="assets/fp-resource-center-tools.png" alt="Illustrated preview of the FP Resource Center tools interface"><figcaption>Resource Center interface preview. This illustration introduces the design direction.</figcaption></figure>
-  <nav class="flag-jumps flag-wrap" aria-label="Resource Center case study sections"><a href="#fp-challenge">Challenge</a><a href="#fp-decisions">Design decisions</a><a href="#fp-delivery">Delivery</a><a href="#fp-impact">Impact</a></nav>
-  <main class="flag-wrap">
-    <section class="flag-section flag-two" id="fp-challenge">
-      <div><p class="projects-kicker">The challenge</p><h2>The organization made sense internally. It did less to help coaches find a tool.</h2></div>
-      <div class="flag-prose"><p>Resources were grouped by department, while coaches were looking for ways to complete a task. A dense grid gave tools similar visual weight, leaving users to read through labels to decide where to go.</p><p>The design problem was to make a large collection easier to navigate: clearer entry points, a stronger hierarchy, and consistent interactions across the experience.</p></div>
-    </section>
-    <section class="flag-section flag-research">
-      <p class="projects-kicker">Discovery → direction</p><h2>Research changed what the interface needed to prioritize.</h2>
-      <div class="flag-three"><div><h3>12 coach interviews</h3><p>Coaches described difficulty finding resources relevant to their workflows and a preference for task-based organization.</p><strong>Design implication</strong><p>Use the coach’s task as the starting point for navigation.</p></div><div><h3>300+ resources audited</h3><p>The audit mapped existing content against user needs and identified redundant resources and gaps.</p><strong>Design implication</strong><p>Clarify the structure before polishing individual tiles.</p></div><div><h3>Interface review</h3><p>Inconsistent patterns and weak visual hierarchy made the collection harder to scan and navigate.</p><strong>Design implication</strong><p>Give labels, actions, and reusable components consistent roles.</p></div></div>
-    </section>
-    <section class="flag-section" id="fp-decisions">
-      <p class="projects-kicker">Decision 01 · Information architecture</p><h2>Organize around tasks coaches recognize.</h2>
-      <p class="flag-lead">I reorganized a department-based collection into a workflow-aligned structure, giving users a clearer way to choose where to begin.</p>
-      <div class="flag-comparison"><div><span>Before</span><h3>Start with the organization</h3><ol><li>Choose an internal department</li><li>Scan a uniform set of resource tiles</li><li>Read labels to find a relevant tool</li></ol></div><div><span>After</span><h3>Start with the work</h3><ol><li>Identify the task or workflow</li><li>Scan clearly labeled resources</li><li>Use the relevant tool’s action</li></ol></div></div>
-      <p class="flag-caption">Conceptual summary of the change in organization, rather than a reproduction of the original navigation.</p>
-    </section>
-    <section class="flag-section flag-two">
-      <div><p class="projects-kicker">Decision 02 · Hierarchy</p><h2>Make the next action easier to identify.</h2></div>
-      <div class="flag-prose"><p>The old grid asked users to inspect every tile. I introduced clearer labels, consistent spacing, and stronger visual hierarchy to help coaches distinguish resources and their actions.</p><p>This connected the information architecture to the interface: organizing content was only useful if people could scan it and decide what to do next.</p></div>
-    </section>
-    <section class="flag-section flag-two">
-      <div><p class="projects-kicker">Decision 03 · UI systems</p><h2>Build familiarity across Focal Point tools.</h2></div>
-      <div class="flag-prose"><p>I aligned typography, icons, and interaction patterns with the FP brand and the updated Library. The aim was a consistent experience as coaches moved between platforms.</p><p>A shared visual language also gave the Resource Center a repeatable way to present tools, instead of treating every resource as a separate design problem.</p></div>
-    </section>
-    <section class="flag-section flag-delivery" id="fp-delivery">
-      <p class="projects-kicker">My contribution</p><h2>From discovery to the implemented experience.</h2>
-      <div class="flag-two"><div class="flag-prose"><p>As Lead UX Designer, I connected the research findings to the resource structure and interface, then translated the high-fidelity Figma design into Wix with responsive behavior across desktop and mobile.</p></div><ul class="flag-contributions"><li>Conducted discovery interviews with 12 coaches.</li><li>Audited and mapped 300+ existing resources.</li><li>Defined workflow-aligned resource organization.</li><li>Designed hierarchy, navigation, and high-fidelity UI in Figma.</li><li>Implemented the redesigned experience in Wix.</li></ul></div>
-    </section>
-    <section class="flag-section" id="fp-impact">
-      <p class="projects-kicker">Coach feedback</p><h2>A clearer experience for everyday resource discovery.</h2>
-      <div class="flag-feedback"><h3>What coaches told us</h3><p>Coaches described the redesigned Resource Center as easier to use, with clearer pathways to the tools they rely on daily.</p><p class="flag-caption">Summary of qualitative coach feedback, not a measured percentage change.</p></div>
-      
-    </section>
-    <section class="flag-section flag-two">
-      <div><p class="projects-kicker">Reflection & next steps</p><h2>Make the structure visible in the interface.</h2></div>
-      <div class="flag-prose"><p>This project connected two layers of the same problem: how resources were organized and how coaches could recognize them on screen. The redesign needed both task-aligned architecture and a consistent hierarchy.</p><h3>What I would validate next</h3><p>I would compare success and time-on-task for common resource-finding scenarios, then examine where newer and experienced coaches still take different paths. That would help distinguish improvements in visual clarity from improvements in task completion.</p></div>
-    </section>
-    <footer class="flag-footer" aria-label="Case study navigation"><a href="#projects-anchor" class="site-action case-return" onclick="go('home','projects-anchor');return false;">Back to selected work</a><a href="#cs2" class="site-action case-next" onclick="go('cs2');return false;"><span class="case-next-label">Next case study</span><span class="case-next-title">Focal Point Library Redesign</span></a></footer>
-  </main>
-</div>
+<div id="page-cs1" class="page coach-case">
+<div class="coach-wrap">
+<header class="coach-panel coach-hero">
+<a href="#projects-anchor" class="site-action coach-back" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
+<p class="coach-kicker">Product design · UX/UI · Product development</p>
+<h1>Coach Central</h1>
+<p class="coach-deck">Designing a centralized digital experience for 150+ coaches.</p>
+<dl class="coach-metrics"><div><dt>300+</dt><dd>resources migrated</dd></div><div><dt>Mobile</dt><dd>UX ownership</dd></div><div><dt>5</dt><dd>departments supported</dd></div></dl>
+<figure class="coach-overview"><img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221200%22%20height%3D%22720%22%20viewBox%3D%220%200%201200%20720%22%3E%3Crect%20width%3D%221200%22%20height%3D%22720%22%20rx%3D%2228%22%20fill%3D%22%23172f37%22%2F%3E%3Cg%20font-family%3D%22Arial%2Csans-serif%22%3E%3Ctext%20x%3D%2270%22%20y%3D%2290%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2218%22%20letter-spacing%3D%223%22%3EONE%20CONNECTED%20COACHING%20ECOSYSTEM%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22164%22%20fill%3D%22%23fff%22%20font-size%3D%2260%22%20font-weight%3D%22700%22%3ECoach%20Central%3C%2Ftext%3E%3Ctext%20x%3D%2270%22%20y%3D%22209%22%20fill%3D%22%23c5d4d7%22%20font-size%3D%2224%22%3EResources%2C%20community%20and%20events%20in%20one%20place.%3C%2Ftext%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%2379cfc5%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M230%20410V325H970V410M600%20325V410%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23254650%22%20stroke%3D%22%2342656e%22%20stroke-width%3D%222%22%3E%3Crect%20x%3D%2270%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22440%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3Crect%20x%3D%22810%22%20y%3D%22410%22%20width%3D%22320%22%20height%3D%22205%22%20rx%3D%2218%22%2F%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23fff%22%20font-size%3D%2230%22%20font-weight%3D%22700%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22467%22%3EResources%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22467%22%3ECommunity%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22467%22%3EEvents%3C%2Ftext%3E%3C%2Fg%3E%3Cg%20fill%3D%22%23c5d4d7%22%20font-size%3D%2221%22%3E%3Ctext%20x%3D%22102%22%20y%3D%22513%22%3E300%2B%20reorganized%20resources%3C%2Ftext%3E%3Ctext%20x%3D%22102%22%20y%3D%22550%22%3ESearch%20and%20categorization%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22513%22%3EDiscussions%20and%20tagging%3C%2Ftext%3E%3Ctext%20x%3D%22472%22%20y%3D%22550%22%3EPrivate%20conversations%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22513%22%3ETraining%20and%20connection%3C%2Ftext%3E%3Ctext%20x%3D%22842%22%20y%3D%22550%22%3EDesigned%20for%20mobile%20use%3C%2Ftext%3E%3C%2Fg%3E%3Ctext%20x%3D%2270%22%20y%3D%22673%22%20fill%3D%22%2392dcd1%22%20font-size%3D%2217%22%20letter-spacing%3D%222%22%3EPLATFORM%20STRUCTURE%20%C2%B7%20CASE%20STUDY%20OVERVIEW%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Coach Central connects resources, community discussions, and events in one ecosystem"><figcaption>Platform structure overview. Product screenshots are not shown here.</figcaption></figure>
+</header>
+<nav class="coach-jumps" aria-label="Coach Central case study sections"><a href="#coach-challenge">Challenge</a><a href="#coach-role">My role</a><a href="#coach-migration">Migration</a><a href="#coach-mobile">Mobile UX</a><a href="#coach-features">Features</a><a href="#coach-process">Iteration</a><a href="#coach-impact">Impact</a></nav>
+<section id="coach-challenge" class="coach-panel coach-split">
+<div><p class="coach-kicker">01 · The challenge</p><h2>From fragmented tools to one ecosystem</h2><p>Resources, communication, and community experiences were spread across multiple systems. The goal was to bring these into a coherent product, with clearer paths between finding resources and connecting with other coaches.</p></div>
+<figure class="coach-flow"><div class="coach-sources"><span>Old library</span><span>Community tools</span><span>Training &amp; resources</span></div><div class="coach-flow-line" aria-hidden="true"></div><strong>Coach Central</strong><figcaption>A shared entry point for the coaching community.</figcaption></figure>
+</section>
+<section id="coach-role" class="coach-panel"><p class="coach-kicker">02 · My role</p><h2>Connecting users, stakeholders, and development</h2><p>I worked across resource organization, mobile interaction design, and community features, connecting coach needs with stakeholder priorities and implementation in Cursor.</p><ul class="coach-role-flow"><li>Coaches</li><li class="coach-highlight">Product design</li><li>Stakeholders</li><li>Cursor / Development</li></ul></section>
+<section id="coach-migration" class="coach-panel"><p class="coach-kicker">03 · Resource migration</p><h2>Reorganizing 300+ resources for a new platform</h2><p>I audited legacy content, restructured the information architecture, improved categorization, and adapted resources for Coach Central.</p><div class="coach-comparison"><div><span class="coach-small">Starting point</span><h3>Legacy library</h3><p>Content distributed across existing systems.</p></div><div><span class="coach-small">Design direction</span><h3>Coach Central</h3><p>Resources organized within a shared platform, supported by search and filters.</p></div></div></section>
+<section id="coach-mobile" class="coach-panel"><p class="coach-kicker">04 · Mobile UX ownership</p><h2>Rethinking interactions for smaller screens</h2><p>My mobile work covered the home experience, discussions, and events, with attention to how coaches navigate, find content, and participate on a phone.</p><div class="coach-three"><div><span class="coach-small">Home</span><h3>Find a starting point</h3><p>Responsive cards and navigation that help coaches move between key areas.</p></div><div><span class="coach-small">Discussions</span><h3>Join the conversation</h3><p>Search, filters, and a post composer adapted for mobile interaction.</p></div><div><span class="coach-small">Events</span><h3>Explore what’s happening</h3><p>Event information presented within the same mobile experience.</p></div></div><ul class="coach-tags"><li>Search</li><li>Filters</li><li>Post composer</li><li>Responsive cards</li><li>Navigation</li></ul></section>
+<section id="coach-features" class="coach-panel"><p class="coach-kicker">05 · Feature design</p><h2>Building the coach community</h2><div class="coach-three coach-features"><div><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M16 8v6c0 3 4 2 4-2M16 12a4 4 0 1 1-4-4c3 0 4 2 4 4"/></svg><h3>Coach tagging</h3><p>Connect conversations to coach profiles and support discovery.</p></div><div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H9l-5 4V4Z"/><path d="M8 8h8M8 12h5"/></svg><h3>Discussions</h3><p>Topic-based conversations, reactions, filtering, and resource sharing.</p></div><div><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><h3>Private messages</h3><p>Move from community conversations into direct communication.</p></div></div></section>
+<section id="coach-process" class="coach-panel"><p class="coach-kicker">06 · How I work</p><h2>Continuous product iteration</h2><p>I connect observation and feedback with design and development, refining the product as needs become clearer.</p><ol class="coach-process"><li>Observe</li><li>Gather feedback</li><li>Define</li><li>Design</li><li>Build</li><li>Refine</li></ol></section>
+<section id="coach-impact" class="coach-panel"><p class="coach-kicker">07 · Impact</p><h2>One ecosystem for a wider coaching community</h2><dl class="coach-metrics coach-impact-metrics"><div><dt>300+</dt><dd>resources migrated</dd></div><div><dt>150+</dt><dd>coaches served</dd></div><div><dt>5</dt><dd>departments supported</dd></div><div><dt>1</dt><dd>central ecosystem</dd></div></dl><p class="coach-reflection">My contribution extended beyond individual screens: I helped evolve a shared product across resource discovery, mobile use, and community participation.</p></section>
+<footer class="flag-footer" aria-label="Case study navigation"><a href="#projects-anchor" class="site-action case-return" onclick="go('home','projects-anchor');return false;">Back to selected work</a><a href="#cs2" class="site-action case-next" onclick="go('cs2');return false;"><span class="case-next-label">Next case study</span><span class="case-next-title">Focal Point Library Redesign</span></a></footer>
+</div></div>
 <script>
 async function submitContactForm(event){
  event.preventDefault();
