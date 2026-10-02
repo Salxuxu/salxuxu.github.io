@@ -670,6 +670,12 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
 @media(hover:none){.site-action:hover{transform:none!important;}}
 
 #projects-anchor,#about-anchor,#contact-anchor{scroll-margin-top:80px;}
+.contact-form label{font-size:14px;font-weight:700;color:#fff;margin-bottom:-6px;}
+.contact-form-note{font-size:13px;line-height:1.6;color:rgba(255,255,255,.85);margin:0;}
+.contact-form-note a{color:#fff;text-underline-offset:4px;}
+.contact-form input,.contact-form textarea{font-size:16px;min-height:48px;}
+.contact-form textarea{min-height:130px;resize:vertical;}
+.contact-form input:focus-visible,.contact-form textarea:focus-visible{outline:3px solid var(--sage);outline-offset:3px;}
 </style>
 </head>
 <body>
@@ -763,16 +769,21 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
     <div class="contact-content">
       <h2 class="contact-title">LET'S CONNECT</h2>
       <p class="contact-sub">I'd love to chat about design, creative projects, or anything that makes people's lives easier.</p>
-      <div class="contact-form">
-        <input type="text" placeholder="Jane Smith" />
-        <input type="email" placeholder="jane@email.com" />
-        <textarea placeholder="..."></textarea>
-        <button type="button" class="site-action btn-submit">Submit</button>
-      </div>
+      <form class="contact-form" action="mailto:xushizhe2000@gmail.com" method="post" enctype="text/plain" onsubmit="return prepareContactEmail(event)">
+        <label for="contact-name">Your name</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" maxlength="100" required />
+        <label for="contact-email">Your email</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" maxlength="254" required />
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" placeholder="Tell me what you have in mind…" maxlength="5000" required></textarea>
+        <p class="contact-form-note" id="contact-email-note">Opens your email app with a draft you can review before sending.</p>
+        <button type="submit" class="site-action btn-submit" aria-describedby="contact-email-note">Open email draft</button>
+        <p class="contact-form-note">Prefer a direct email? <a href="mailto:xushizhe2000@gmail.com">xushizhe2000@gmail.com</a></p>
+      </form>
       <div class="contact-links">
-        <a href="#" class="site-action contact-link">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/salenaxu/" target="_blank" rel="noopener noreferrer" class="site-action contact-link" aria-label="LinkedIn (opens in a new tab)">LinkedIn</a>
         <a href="https://drive.google.com/file/d/16KX1mPE6mJg9DO-45j1o8fYiDNcC44k3/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="contact-link">Resume</a>
-        <a href="#" class="site-action contact-link">Dribbble</a>
+        <a href="https://dribbble.com/Salxuxu" target="_blank" rel="noopener noreferrer" class="site-action contact-link" aria-label="Dribbble (opens in a new tab)">Dribbble</a>
       </div>
     </div>
     <div class="contact-dog">
@@ -957,6 +968,18 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
   </main>
 </div>
 <script>
+function prepareContactEmail(event){
+ event.preventDefault();
+ const form=event.currentTarget;
+ if(!form.reportValidity())return false;
+ const name=form.elements.name.value.trim();
+ const email=form.elements.email.value.trim();
+ const message=form.elements.message.value.trim();
+ const subject='Portfolio inquiry from '+name;
+ const body=message+'\n\nFrom: '+name+'\nReply to: '+email;
+ window.location.href='mailto:xushizhe2000@gmail.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+ return false;
+}
 function go(id,section,fromHistory=false){
   const t=document.getElementById('page-'+id);
   if(!t)return;
