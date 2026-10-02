@@ -797,6 +797,25 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 @media(max-width:560px){.contact-dog-idle{width:120px;}}
 @media(prefers-reduced-motion:reduce){.contact-dog-idle .contact-dog-body{clip-path:none;}.contact-dog-idle .contact-dog-tail{display:none;animation:none;}}
 
+
+/* About and Contact share the same inset, portrait column and text column. */
+:root{--profile-inset:clamp(24px,4.7vw,60px);--profile-gap:clamp(32px,4.4vw,56px);--profile-column:280px;}
+.about-card{display:grid;grid-template-columns:var(--profile-column) minmax(0,1fr);gap:var(--profile-gap);padding:48px var(--profile-inset);}
+.about-polaroid{width:100%;min-width:0;}
+.about-text{min-width:0;}
+.contact-section{grid-template-columns:var(--profile-column) minmax(0,1fr);column-gap:var(--profile-gap);padding-left:calc(var(--page-gutter) + var(--profile-inset));padding-right:calc(var(--page-gutter) + var(--profile-inset));}
+.contact-content{min-width:0;}
+@media(max-width:900px){
+ .about-card,.contact-section{grid-template-columns:minmax(0,1fr);gap:28px;}
+ .about-polaroid{width:min(100%,240px);justify-self:center;}
+ .contact-content{grid-column:1;grid-row:1;}
+ .contact-dog{grid-column:1;grid-row:2;}
+}
+@media(max-width:560px){
+ .about-card{padding:32px var(--profile-inset);}
+ .contact-section{gap:20px;}
+}
+
 </style>
 </head>
 <body>
