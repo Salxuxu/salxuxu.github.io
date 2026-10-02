@@ -1057,6 +1057,14 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 #page-cs1 .cs-back-bar>.cs-back-btn:active{transform:none;box-shadow:none;}
 #page-cs1 .cs-back-bar>.cs-back-btn:focus-visible{outline:3px solid var(--teal-dark);outline-offset:5px;}
 
+
+/* Back navigation is consistently secondary throughout the portfolio. */
+.page .back-link{display:inline-flex;align-items:center;justify-content:flex-start;width:fit-content;max-width:100%;min-width:0;min-height:44px;background:transparent!important;color:#536059!important;border:0!important;border-radius:4px!important;box-shadow:none!important;padding:4px 0!important;font-family:var(--font);font-size:13px!important;font-weight:700!important;line-height:1.5;letter-spacing:0!important;text-transform:none!important;text-align:left;text-decoration:underline!important;text-decoration-color:#8c9980!important;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer;transform:none!important;}
+.page .back-link::before,.page .back-link::after{content:none;}
+.page .back-link:hover{background:transparent!important;color:var(--teal-dark)!important;box-shadow:none!important;transform:none!important;opacity:1;text-decoration-color:currentColor!important;}
+.page .back-link:active{box-shadow:none!important;transform:none!important;}
+.page .back-link:focus-visible{outline:3px solid var(--teal-dark);outline-offset:5px;}
+
 </style>
 </head>
 <body>
@@ -1174,7 +1182,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 </div>
 <div id="page-work" class="page">
   <section class="work-archive" aria-labelledby="archive-heading">
-    <a class="archive-back" href="#projects-anchor" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
+    <a class="archive-back back-link" href="#projects-anchor" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
     <header class="archive-header">
       <p class="projects-kicker">Project collection</p>
       <h1 id="archive-heading">All Projects</h1>
@@ -1197,7 +1205,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 </div>
 <div id="page-cs2" class="page cs-page">
   <div class="cs-back-bar" style="background:var(--sage);">
-    <button type="button" class="site-action cs-back-btn" onclick="go('home','projects-anchor')">Back to selected work</button>
+    <button type="button" class="cs-back-btn back-link" onclick="go('home','projects-anchor')">Back to selected work</button>
     <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;">
       <span class="cs-tag" style="background:var(--teal-dark);">UX Design</span>
       <span class="cs-tag" style="background:#B5A88A;color:var(--dark);">Research</span>
@@ -1303,13 +1311,13 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
     </div>
   </div>
   <div class="cs-nav-bottom">
-    <button type="button" class="site-action cs-nav-btn" onclick="go('home','projects-anchor')">Back to selected work</button>
+    <button type="button" class="cs-nav-btn back-link" onclick="go('home','projects-anchor')">Back to selected work</button>
     <button type="button" class="site-action cs-nav-btn" onclick="go('cs1')">Coach Central</button>
   </div>
 </div>
 <div id="page-cs1" class="page cs-page coach-library-style">
 <header class="cs-back-bar">
-<a href="#projects-anchor" class="cs-back-btn" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
+<a href="#projects-anchor" class="cs-back-btn back-link" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
 <div class="coach-library-hero"><div class="coach-library-heading"><div class="cs-tags coach-project-tags"><span class="cs-tag" style="background:var(--teal-dark)">Product Design</span><span class="cs-tag" style="background:var(--tan);color:var(--dark)">Mobile UX</span><span class="cs-tag" style="background:#C8693A">Product Development</span></div><h1 class="cs-hero-title">Coach Central</h1><p class="cs-hero-sub">Bringing resources, community, and events into one connected digital experience for 150+ coaches.</p>
 <dl class="coach-library-meta"><div><dt class="cs-meta-label">Role</dt><dd class="cs-meta-val">Product Designer</dd></div><div><dt class="cs-meta-label">Scope</dt><dd class="cs-meta-val">IA · Mobile UX · UI · Development</dd></div><div><dt class="cs-meta-label">Reach</dt><dd class="cs-meta-val">150+ coaches · 5 departments</dd></div></dl></div>
 <figure class="coach-library-figure"><img src="assets/coach-central-desktop-mobile.svg" alt="Coach Central dashboard and mobile home experience" width="1536" height="1024" decoding="async"><figcaption>One connected experience across desktop and mobile.</figcaption></figure></div>
@@ -1355,7 +1363,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 <section class="cs-section" id="coach-process"><p class="cs-section-label">How I work</p><h2 class="cs-section-h2">Continuous Product Iteration</h2><div class="cs-body-text"><p>I connect observation and feedback with design and development, refining the product as needs become clearer.</p></div><div class="cs-learnings"><div class="cs-learning"><div class="cs-learning-num">01</div><h3 class="cs-learning-title">Observe &amp; Gather Feedback</h3><p class="cs-learning-body">Understand the needs emerging from users and stakeholders.</p></div><div class="cs-learning"><div class="cs-learning-num">02</div><h3 class="cs-learning-title">Define &amp; Design</h3><p class="cs-learning-body">Translate those needs into structure and interactions.</p></div><div class="cs-learning"><div class="cs-learning-num">03</div><h3 class="cs-learning-title">Build</h3><p class="cs-learning-body">Connect product design with implementation in Cursor.</p></div><div class="cs-learning"><div class="cs-learning-num">04</div><h3 class="cs-learning-title">Refine</h3><p class="cs-learning-body">Continue iterating as the product and its needs evolve.</p></div></div></section>
 <section class="cs-section" id="coach-impact"><p class="cs-section-label">Impact &amp; scope</p><h2 class="cs-section-h2">One Platform for the Coaching Community</h2><div class="cs-stats coach-library-stats"><div class="cs-stat"><div class="cs-stat-num">300+</div><div class="cs-stat-label">Resources Migrated</div></div><div class="cs-stat"><div class="cs-stat-num">150+</div><div class="cs-stat-label">Coaches Served</div></div><div class="cs-stat"><div class="cs-stat-num">5</div><div class="cs-stat-label">Departments Supported</div></div><div class="cs-stat"><div class="cs-stat-num">1</div><div class="cs-stat-label">Central Ecosystem</div></div></div><div class="cs-body-text"><p>My contribution extended beyond individual screens: I helped evolve a shared product across resource discovery, mobile use, and community participation.</p></div></section>
 </main>
-<footer class="cs-nav-bottom" aria-label="Case study navigation"><a href="#projects-anchor" class="site-action case-return" onclick="go('home','projects-anchor');return false;">Back to selected work</a><a href="#cs2" class="site-action case-next" onclick="go('cs2');return false;"><span class="case-next-label">Next case study</span><span class="case-next-title">Focal Point Library Redesign</span></a></footer>
+<footer class="cs-nav-bottom" aria-label="Case study navigation"><a href="#projects-anchor" class="case-return back-link" onclick="go('home','projects-anchor');return false;">Back to selected work</a><a href="#cs2" class="site-action case-next" onclick="go('cs2');return false;"><span class="case-next-label">Next case study</span><span class="case-next-title">Focal Point Library Redesign</span></a></footer>
 </div>
 <script>
 async function submitContactForm(event){
