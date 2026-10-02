@@ -739,6 +739,38 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 .social-icon-link:focus-visible{outline:3px solid var(--sage);outline-offset:5px;}
 .social-icon-link:active{background:var(--sage);color:var(--dark);}
 @media(prefers-reduced-motion:reduce){.social-icon-link{transition:none;}}
+
+/* Reference contact layout: illustration left, a generous form right. */
+.contact-section{display:grid;grid-template-columns:minmax(0,42fr) minmax(0,58fr);gap:64px;align-items:center;background:#0c4159;padding-top:72px;padding-bottom:72px;font-family:Arial,Helvetica,sans-serif;}
+.contact-content{grid-column:2;grid-row:1;max-width:none;width:100%;min-width:0;}
+.contact-title{font-family:Arial,Helvetica,sans-serif;font-size:clamp(30px,3vw,40px);font-weight:800;line-height:1.15;letter-spacing:-.025em;margin:0 0 20px;}
+.contact-sub{font-family:inherit;font-size:17px;line-height:1.65;max-width:none;margin:0 0 32px;color:#e9f1f5;}
+.contact-form{display:flex;flex-direction:column;gap:12px;width:100%;max-width:none;margin:0;}
+.contact-form label{font-family:inherit;font-size:14px;font-weight:500;color:#c3d6df;margin:0;}
+.contact-form input,.contact-form textarea{width:100%;box-sizing:border-box;border:1px solid rgba(255,255,255,.08);border-radius:10px;background:#2b5369;color:#fff;font-family:inherit;font-size:16px;line-height:1.5;padding:14px 16px;margin:0 0 8px;}
+.contact-form input{height:52px;}
+.contact-form textarea{min-height:112px;}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#b4c9d4;opacity:1;}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#55cfce;background:#305d73;}
+.contact-section .contact-form .btn-submit.site-action{width:100%;min-height:52px;align-self:stretch;background:#35b9b8!important;color:#063447!important;font-family:inherit!important;font-size:16px!important;font-weight:700!important;border-radius:10px!important;box-shadow:none!important;padding:14px 20px!important;transform:none!important;margin-top:4px;}
+.contact-section .contact-form .btn-submit.site-action:hover{background:#64d2cc!important;box-shadow:none!important;transform:none!important;}
+.contact-section .contact-form .btn-submit.site-action:active{background:#24a4a5!important;transform:none!important;}
+.contact-dog{grid-column:1;grid-row:1;display:flex;align-items:center;justify-content:center;width:100%;height:auto;min-width:0;align-self:center;}
+.contact-dog img{display:block;width:min(100%,345px);height:auto!important;max-height:none;object-fit:contain;image-rendering:pixelated;align-self:center!important;}
+.contact-links{margin-top:20px;gap:16px;}
+.contact-form-note{font-family:inherit;font-size:13px;line-height:1.6;}
+@media(max-width:900px){
+ .contact-section{grid-template-columns:minmax(0,35fr) minmax(0,65fr);gap:32px;}
+ .contact-dog img{width:min(100%,250px);}
+}
+@media(max-width:560px){
+ .contact-section{grid-template-columns:1fr;gap:32px;padding-top:48px;padding-bottom:48px;}
+ .contact-content{grid-column:1;grid-row:1;}
+ .contact-dog{grid-column:1;grid-row:2;}
+ .contact-dog img{width:140px;}
+ .contact-title{font-size:30px;}
+ .contact-sub{font-size:16px;margin-bottom:28px;}
+}
 </style>
 </head>
 <body>
@@ -833,14 +865,14 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
       <h2 class="contact-title">LET'S CONNECT</h2>
       <p class="contact-sub">I'd love to chat about design, creative projects, or anything that makes people's lives easier.</p>
       <form class="contact-form" action="https://formsubmit.co/xushizhe2000@gmail.com" method="post" onsubmit="submitContactForm(event);return false;">
-        <label for="contact-name">Your name</label>
+        <label for="contact-name">Name</label>
         <input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Jane Smith" maxlength="100" required />
-        <label for="contact-email">Your email</label>
+        <label for="contact-email">Email</label>
         <input id="contact-email" name="email" type="email" autocomplete="email" placeholder="jane@email.com" maxlength="254" required />
         <label for="contact-message">Message</label>
         <textarea id="contact-message" name="message" placeholder="Tell me what you have in mind…" maxlength="5000" required></textarea>
         <input type="hidden" name="_subject" value="New portfolio contact message" /><input type="hidden" name="_template" value="table" /><input type="text" name="_honey" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <button type="submit" class="site-action btn-submit">Send message</button><p class="contact-form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <button type="submit" class="site-action btn-submit">Submit</button><p class="contact-form-status" role="status" aria-live="polite" aria-atomic="true"></p>
         <p class="contact-form-note">Prefer a direct email? <a href="mailto:xushizhe2000@gmail.com">xushizhe2000@gmail.com</a></p>
       </form>
       <div class="contact-links">
@@ -850,7 +882,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
       </div>
     </div>
     <div class="contact-dog">
-      <img src="https://framerusercontent.com/images/krAD50NBo4MOdbbEs5a7DkBiY.gif" alt="golden retriever pixel art" style="height:320px;width:auto;image-rendering:pixelated;align-self:flex-end;">
+      <img src="https://framerusercontent.com/images/ejWXTawPL1b3rJjGqQbFQJWRPo.png" alt="Golden retriever wearing a tie" width="345" height="428" loading="lazy">
     </div>
   </section>
 </div>
@@ -1072,7 +1104,7 @@ async function submitContactForm(event){
   status.textContent='Your message could not be sent. Please try again or use the email link below.';
  }finally{
   clearTimeout(timeout);delete form.dataset.sending;form.removeAttribute('aria-busy');
-  button.disabled=false;button.textContent='Send message';
+  button.disabled=false;button.textContent='Submit';
  }
 }
 function go(id,section,fromHistory=false){
