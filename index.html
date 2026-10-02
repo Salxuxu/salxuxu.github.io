@@ -1071,6 +1071,13 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 .cs-page .cs-back-bar img,.cs-page .cs-body img{max-width:100%;}
 .cs-page .cs-back-bar>div,.cs-page .cs-body>section,.cs-page .cs-body>.cs-section{min-width:0;}
 
+
+/* Let copy use its full column within the shared page grid. */
+.cs-page .cs-body-text,.cs-page .cs-hero-sub,.cs-page .resource-design-note p,.cs-page .resource-library-screen figcaption,.cs-page .mini-case-description{max-width:none;width:100%;}
+#page-cs1 .cs-hero-sub{max-width:none;}
+.cs-page .mini-case-title,.cs-page .resource-story>.cs-section-h2{max-width:none;}
+#page-cs2 .cs-hero-title{font-size:clamp(36px,4.5vw,56px);}
+
 </style>
 </head>
 <body>
@@ -1123,12 +1130,12 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
       <article class="case-row case-row-reverse reveal">
         <div class="case-copy">
           <p class="case-eyebrow"><span>02</span> · Library experience</p>
-          <h3>Focal Point Library Redesign</h3>
+          <h3>Library Homepage Redesign</h3>
           <p class="case-summary">Redesigned a static homepage around the events, resources, and updates coaches use most.</p>
           <p class="case-impact">+35% event engagement</p>
           <p class="case-ownership">Lead Product Designer · User research, dashboard structure, and UI design.</p>
           <p class="case-skills">Dashboard UX · Content strategy</p>
-          <a href="#cs2" class="site-action case-link" onclick="go('cs2');return false;">View case study <span class="sr-only">: Focal Point Library Redesign</span></a>
+          <a href="#cs2" class="site-action case-link" onclick="go('cs2');return false;">View case study <span class="sr-only">: Library Homepage Redesign</span></a>
         </div>
         <a class="case-image" href="#cs2" onclick="go('cs2');return false;" aria-label="View Focal Point Library case study"><img src="assets/focal-point-library-dashboard.png" alt="Focal Point Library dashboard with search, events, and resources" loading="lazy" decoding="async"></a>
       </article>
@@ -1201,9 +1208,9 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
         <div class="archive-copy"><p class="archive-category">01 · Coaching ecosystem</p><h2>Coach Central</h2><p class="archive-description">One connected experience for resources, community, and events.</p><p class="archive-result">150+ coaches · 300+ resources</p></div>
         <span class="archive-open">View case study</span>
       </a>
-      <a class="archive-entry" href="#cs2" onclick="go('cs2');return false;" aria-label="View case study: Focal Point Library Redesign">
+      <a class="archive-entry" href="#cs2" onclick="go('cs2');return false;" aria-label="View case study: Library Homepage Redesign">
         <img class="archive-thumbnail" src="assets/focal-point-library-dashboard.png" alt="" loading="lazy" />
-        <div class="archive-copy"><p class="archive-category">02 · Internal dashboard</p><h2>Focal Point Library Redesign</h2><p class="archive-description">Brought events, resources, and updates into one focused dashboard.</p><p class="archive-result">+35% event engagement</p></div>
+        <div class="archive-copy"><p class="archive-category">02 · Internal dashboard</p><h2>Library Homepage Redesign</h2><p class="archive-description">Brought events, resources, and updates into one focused dashboard.</p><p class="archive-result">+35% event engagement</p></div>
         <span class="archive-open">View case study</span>
       </a>
     </div>
@@ -1219,7 +1226,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:20px;">
       <div>
-        <h1 class="cs-hero-title">Focal Point Library Homepage Redesign</h1>
+        <h1 class="cs-hero-title">Library Homepage Redesign</h1>
         <p class="cs-hero-sub">Transforming a static internal homepage into a dynamic dashboard for coaches — making critical resources instantly accessible.</p>
         <div style="display:flex;gap:40px;flex-wrap:wrap;margin-top:32px;">
           <div><div class="cs-meta-label">Role</div><div class="cs-meta-val">Lead Product Designer</div></div>
@@ -1369,7 +1376,7 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 <section class="cs-section" id="coach-process"><p class="cs-section-label">How I work</p><h2 class="cs-section-h2">Continuous Product Iteration</h2><div class="cs-body-text"><p>I connect observation and feedback with design and development, refining the product as needs become clearer.</p></div><div class="cs-learnings"><div class="cs-learning"><div class="cs-learning-num">01</div><h3 class="cs-learning-title">Observe &amp; Gather Feedback</h3><p class="cs-learning-body">Understand the needs emerging from users and stakeholders.</p></div><div class="cs-learning"><div class="cs-learning-num">02</div><h3 class="cs-learning-title">Define &amp; Design</h3><p class="cs-learning-body">Translate those needs into structure and interactions.</p></div><div class="cs-learning"><div class="cs-learning-num">03</div><h3 class="cs-learning-title">Build</h3><p class="cs-learning-body">Connect product design with implementation in Cursor.</p></div><div class="cs-learning"><div class="cs-learning-num">04</div><h3 class="cs-learning-title">Refine</h3><p class="cs-learning-body">Continue iterating as the product and its needs evolve.</p></div></div></section>
 <section class="cs-section" id="coach-impact"><p class="cs-section-label">Impact &amp; scope</p><h2 class="cs-section-h2">One Platform for the Coaching Community</h2><div class="cs-stats coach-library-stats"><div class="cs-stat"><div class="cs-stat-num">300+</div><div class="cs-stat-label">Resources Migrated</div></div><div class="cs-stat"><div class="cs-stat-num">150+</div><div class="cs-stat-label">Coaches Served</div></div><div class="cs-stat"><div class="cs-stat-num">5</div><div class="cs-stat-label">Departments Supported</div></div><div class="cs-stat"><div class="cs-stat-num">1</div><div class="cs-stat-label">Central Ecosystem</div></div></div><div class="cs-body-text"><p>My contribution extended beyond individual screens: I helped evolve a shared product across resource discovery, mobile use, and community participation.</p></div></section>
 </main>
-<footer class="cs-nav-bottom" aria-label="Case study navigation"><a href="#projects-anchor" class="case-return back-link" onclick="go('home','projects-anchor');return false;">Back to selected work</a><a href="#cs2" class="site-action case-next" onclick="go('cs2');return false;"><span class="case-next-label">Next case study</span><span class="case-next-title">Focal Point Library Redesign</span></a></footer>
+<footer class="cs-nav-bottom" aria-label="Case study navigation"><a href="#projects-anchor" class="case-return back-link" onclick="go('home','projects-anchor');return false;">Back to selected work</a><a href="#cs2" class="site-action case-next" onclick="go('cs2');return false;"><span class="case-next-label">Next case study</span><span class="case-next-title">Library Homepage Redesign</span></a></footer>
 </div>
 <script>
 async function submitContactForm(event){
