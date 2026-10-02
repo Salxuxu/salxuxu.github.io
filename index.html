@@ -1020,6 +1020,18 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 @media(max-width:760px){.mini-case-summary{align-items:flex-start;gap:20px;padding:24px;}.mini-case-toggle-label{display:none;}.mini-case-content{padding:24px;}}
 @media(max-width:480px){.mini-case-summary{padding:20px;gap:12px;}.mini-case-title{font-size:23px;}.mini-case-toggle-symbol{width:30px;height:30px;font-size:22px;}.mini-case-description{font-size:15px;}.mini-case-content{padding:20px;}.mini-case-intro{padding-top:40px;}}
 
+
+.mobile-ui-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:28px;align-items:start;}
+.mobile-ui-example{margin:0;padding:24px;border-radius:16px;background:#edf0df;min-width:0;}
+.mobile-ui-example h4{font-size:22px;line-height:1.3;font-weight:900;margin-bottom:24px;}
+.mobile-ui-example>a{display:block;border-radius:12px;}
+.mobile-ui-example>a:focus-visible{outline:3px solid var(--teal-dark);outline-offset:6px;}
+.mobile-ui-example img{display:block;width:100%;max-width:360px;height:auto;margin:0 auto;}
+.mobile-ui-example figcaption{margin-top:24px;font-size:15px;line-height:1.65;color:#4f5f55;}
+.mobile-ui-example figcaption strong{display:block;font-size:17px;color:var(--teal-dark);margin-bottom:8px;}
+.mobile-ui-example figcaption span{display:block;margin-top:12px;font-size:12px;}
+@media(max-width:760px){.mobile-ui-gallery{grid-template-columns:1fr;}.mobile-ui-example{padding:20px;}.mobile-ui-example h4{font-size:21px;}}
+
 </style>
 </head>
 <body>
@@ -1298,8 +1310,22 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 </details></section>
 <section class="cs-section mini-case-section" id="coach-mobile">
 <details class="mini-case">
-<summary class="mini-case-summary"><div class="mini-case-overview"><p class="cs-section-label">02 · Mobile UX</p><h3 class="mini-case-title">Mobile UI Changes</h3><p class="mini-case-description">Adapting the home experience, discussions, and events for coaches using smaller screens.</p><p class="mini-case-skills">Responsive UI · Navigation · Mobile interactions</p></div><span class="mini-case-toggle" aria-hidden="true"><span class="mini-case-toggle-label"></span><span class="mini-case-toggle-symbol"></span></span></summary>
-<div class="mini-case-content"><div class="cs-body-text"><p>My mobile work covered the home experience, discussions, and events, with attention to how coaches navigate, find content, and participate on a phone.</p></div><figure class="coach-library-product"><img class="cs-img" src="assets/coach-central-desktop-mobile.svg" alt="Coach Central desktop and mobile experiences side by side" width="1536" height="1024" loading="lazy"><figcaption>Desktop and mobile views of Coach Central.</figcaption></figure><div class="cs-cards-3"><div class="cs-card"><div class="cs-card-icon" aria-hidden="true">🏠</div><h4 class="cs-card-title">Home</h4><p class="cs-card-body">Responsive cards and navigation help coaches move between key areas.</p></div><div class="cs-card"><div class="cs-card-icon" aria-hidden="true">💬</div><h4 class="cs-card-title">Discussions</h4><p class="cs-card-body">Search, filters, and a post composer adapted for mobile interaction.</p></div><div class="cs-card"><div class="cs-card-icon" aria-hidden="true">📅</div><h4 class="cs-card-title">Events</h4><p class="cs-card-body">Event information presented within the same mobile experience.</p></div></div></div>
+<summary class="mini-case-summary"><div class="mini-case-overview"><p class="cs-section-label">02 · Mobile UX</p><h3 class="mini-case-title">Mobile UI Changes</h3><p class="mini-case-description">Designing clearer event discovery and communications for coaches using smaller screens.</p><p class="mini-case-skills">Responsive UI · Navigation · Mobile interactions</p></div><span class="mini-case-toggle" aria-hidden="true"><span class="mini-case-toggle-label"></span><span class="mini-case-toggle-symbol"></span></span></summary>
+<div class="mini-case-content">
+<div class="cs-body-text"><p>I adapted key Coach Central experiences for mobile, focusing on how coaches find events, scan updates, and move between tasks.</p></div>
+<div class="mobile-ui-gallery">
+<figure class="mobile-ui-example">
+<h4>Events at a Glance</h4>
+<a href="assets/coach-central-mobile-events.svg" target="_blank" rel="noopener noreferrer" aria-label="Open the Events mobile mockup at full size"><img src="assets/coach-central-mobile-events.svg" alt="Coach Central Events mobile screen showing a featured conference, personal and calendar views, connected Google Calendar, and upcoming events" width="923" height="1703" loading="lazy"></a>
+<figcaption><strong>Finding and planning events</strong><p>A featured event highlights the date, location, and details. Personal and calendar views, saved-event summaries, and a visible calendar connection keep planning actions together.</p><span>Tap the image to view full size.</span></figcaption>
+</figure>
+<figure class="mobile-ui-example">
+<h4>Updates Made Scannable</h4>
+<a href="assets/coach-central-mobile-communications.svg" target="_blank" rel="noopener noreferrer" aria-label="Open the What's New mobile mockup at full size"><img src="assets/coach-central-mobile-communications.svg" alt="Coach Central What's New mobile screen with categorized communications, message previews, dates, and search, sort, and filter controls" width="923" height="1704" loading="lazy"></a>
+<figcaption><strong>Keeping up with communications</strong><p>Category labels and icons distinguish weekly updates, important notices, and events. Dates and short previews provide context, with search, sort, and filters available above the list.</p><span>Tap the image to view full size.</span></figcaption>
+</figure>
+</div>
+</div>
 </details></section>
 <section class="cs-section" id="coach-features"><p class="cs-section-label">Feature design</p><h2 class="cs-section-h2">Building the Coach Community</h2><div class="cs-cards-3"><div class="cs-card"><div class="cs-card-icon" aria-hidden="true">@</div><h3 class="cs-card-title">Coach Tagging</h3><p class="cs-card-body">Connect conversations to coach profiles and support discovery.</p></div><div class="cs-card"><div class="cs-card-icon" aria-hidden="true">💬</div><h3 class="cs-card-title">Discussions</h3><p class="cs-card-body">Topic-based conversations, reactions, filtering, and resource sharing.</p></div><div class="cs-card"><div class="cs-card-icon" aria-hidden="true">✉️</div><h3 class="cs-card-title">Private Messages</h3><p class="cs-card-body">Move from community conversations into direct communication.</p></div></div></section>
 <section class="cs-section" id="coach-process"><p class="cs-section-label">How I work</p><h2 class="cs-section-h2">Continuous Product Iteration</h2><div class="cs-body-text"><p>I connect observation and feedback with design and development, refining the product as needs become clearer.</p></div><div class="cs-learnings"><div class="cs-learning"><div class="cs-learning-num">01</div><h3 class="cs-learning-title">Observe &amp; Gather Feedback</h3><p class="cs-learning-body">Understand the needs emerging from users and stakeholders.</p></div><div class="cs-learning"><div class="cs-learning-num">02</div><h3 class="cs-learning-title">Define &amp; Design</h3><p class="cs-learning-body">Translate those needs into structure and interactions.</p></div><div class="cs-learning"><div class="cs-learning-num">03</div><h3 class="cs-learning-title">Build</h3><p class="cs-learning-body">Connect product design with implementation in Cursor.</p></div><div class="cs-learning"><div class="cs-learning-num">04</div><h3 class="cs-learning-title">Refine</h3><p class="cs-learning-body">Continue iterating as the product and its needs evolve.</p></div></div></section>
