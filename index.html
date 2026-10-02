@@ -1065,6 +1065,12 @@ h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{out
 .page .back-link:active{box-shadow:none!important;transform:none!important;}
 .page .back-link:focus-visible{outline:3px solid var(--teal-dark);outline-offset:5px;}
 
+
+/* Match every case-study content edge to the shared navigation grid. */
+.cs-page>.cs-back-bar,.cs-page>.cs-body,.cs-page>.cs-nav-bottom{padding-left:var(--page-gutter);padding-right:var(--page-gutter);}
+.cs-page .cs-back-bar img,.cs-page .cs-body img{max-width:100%;}
+.cs-page .cs-back-bar>div,.cs-page .cs-body>section,.cs-page .cs-body>.cs-section{min-width:0;}
+
 </style>
 </head>
 <body>
