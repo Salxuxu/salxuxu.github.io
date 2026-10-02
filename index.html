@@ -689,6 +689,45 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
  .flag-footer .case-next.site-action{order:-1;min-width:0;width:100%;}
  .flag-footer .case-return.site-action{width:100%;justify-content:center;}
 }
+
+/* A compact, visual collection with one clear destination per row. */
+.work-archive{padding-top:104px;padding-bottom:64px;}
+.archive-back{display:inline-flex;align-items:center;min-height:44px;margin-bottom:24px;color:#53655e;font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:5px;}
+.archive-back:hover{color:var(--dark);}
+.archive-back:focus-visible{outline:3px solid var(--teal-dark);outline-offset:5px;}
+.archive-header{max-width:720px;margin-bottom:28px;}
+.work-archive h1{font-size:clamp(36px,4vw,52px);margin:8px 0 16px;line-height:1.1;}
+.archive-intro{font-size:18px;line-height:1.6;margin-bottom:16px;}
+.archive-count{font-size:12px;font-weight:700;color:#67746b;}
+.archive-list{border-bottom:1px solid #cfd5ce;}
+.archive-entry{grid-template-columns:180px minmax(0,1fr) auto;gap:28px;padding:24px 0;align-items:center;transition:background .15s;}
+.archive-thumbnail{width:180px;aspect-ratio:1.5;object-fit:cover;border-radius:8px;display:block;}
+.archive-copy{min-width:0;}
+.archive-entry .archive-category{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:#53655e;margin-bottom:8px;}
+.archive-entry h2{font-size:24px;line-height:1.25;margin-bottom:8px;}
+.archive-entry .archive-description{font-size:14px;line-height:1.6;margin-bottom:10px;}
+.archive-entry .archive-result{font-size:13px;font-weight:800;color:var(--teal-dark);}
+.archive-open{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border:1px solid #aab5ac;border-radius:7px;font-size:13px;font-weight:800;white-space:nowrap;}
+.archive-entry:hover{background:#eceee5;}
+.archive-entry:hover .archive-open{background:var(--dark);color:#fff;border-color:var(--dark);}
+.archive-entry:focus-visible{outline:3px solid var(--teal-dark);outline-offset:5px;border-radius:8px;}
+h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus,section[tabindex="-1"]:focus{outline:none;}
+@media(max-width:900px){
+ .archive-entry{grid-template-columns:140px minmax(0,1fr);gap:20px;}
+ .archive-thumbnail{width:140px;grid-column:1;grid-row:1 / span 2;}
+ .archive-entry .archive-result{grid-column:auto;}
+ .archive-entry .archive-open{grid-column:2;grid-row:2;justify-self:start;}
+}
+@media(max-width:560px){
+ .work-archive{padding-top:88px;padding-bottom:48px;}
+ .archive-back{margin-bottom:20px;}
+ .archive-intro{font-size:16px;}
+ .archive-entry{grid-template-columns:1fr;gap:16px;padding:24px 0;}
+ .archive-thumbnail{width:100%;aspect-ratio:1.8;object-fit:contain;background:#e9f3f1;grid-column:auto;grid-row:auto;}
+ .archive-entry h2{font-size:23px;}
+ .archive-entry .archive-open{grid-column:1;grid-row:auto;width:100%;justify-self:stretch;}
+}
+@media(prefers-reduced-motion:reduce){.archive-entry{transition:none;}}
 </style>
 </head>
 <body>
@@ -805,12 +844,26 @@ nav.flag-jumps{position:static;height:auto;display:flex;justify-content:flex-sta
   </section>
 </div>
 <div id="page-work" class="page">
-  <section class="work-archive">
-    <p class="projects-kicker">Project collection</p><h1>All Projects</h1>
-    <p class="archive-intro">A complete index of my published product design case studies.</p>
-    <a class="archive-entry" href="#cs1" onclick="go('cs1');return false;"><span class="archive-number">01</span><div><h2>FP Resource Center Redesign</h2><p>Resource platform · Research, IA, and UI design</p></div><span class="archive-result">Positive coach feedback</span><span aria-hidden="true">↗</span></a>
-    <a class="archive-entry" href="#cs2" onclick="go('cs2');return false;"><span class="archive-number">02</span><div><h2>Focal Point Library Redesign</h2><p>Internal dashboard · Research and product design</p></div><span class="archive-result">+35% event engagement</span><span aria-hidden="true">↗</span></a>
-    <a class="site-action case-link" href="#projects-anchor" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
+  <section class="work-archive" aria-labelledby="archive-heading">
+    <a class="archive-back" href="#projects-anchor" onclick="go('home','projects-anchor');return false;">Back to selected work</a>
+    <header class="archive-header">
+      <p class="projects-kicker">Project collection</p>
+      <h1 id="archive-heading">All Projects</h1>
+      <p class="archive-intro">Explore the research, design decisions, and outcomes behind my work.</p>
+      <p class="archive-count">2 case studies</p>
+    </header>
+    <div class="archive-list">
+      <a class="archive-entry" href="#cs1" onclick="go('cs1');return false;" aria-label="View case study: FP Resource Center Redesign">
+        <img class="archive-thumbnail" src="assets/fp-resource-center-tools.png" alt="" loading="lazy" />
+        <div class="archive-copy"><p class="archive-category">01 · Resource platform</p><h2>FP Resource Center Redesign</h2><p class="archive-description">Reorganized 300+ resources around the way coaches work.</p><p class="archive-result">Positive coach feedback</p></div>
+        <span class="archive-open">View case study</span>
+      </a>
+      <a class="archive-entry" href="#cs2" onclick="go('cs2');return false;" aria-label="View case study: Focal Point Library Redesign">
+        <img class="archive-thumbnail" src="assets/focal-point-library-dashboard.png" alt="" loading="lazy" />
+        <div class="archive-copy"><p class="archive-category">02 · Internal dashboard</p><h2>Focal Point Library Redesign</h2><p class="archive-description">Brought events, resources, and updates into one focused dashboard.</p><p class="archive-result">+35% event engagement</p></div>
+        <span class="archive-open">View case study</span>
+      </a>
+    </div>
   </section>
 </div>
 <div id="page-cs2" class="page cs-page">
